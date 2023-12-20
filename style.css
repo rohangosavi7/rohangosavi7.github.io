@@ -516,8 +516,16 @@ card {
 /* Responsive designs */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
   .container {
     padding: 10px 2%;
+    position: relative;
+    height: auto;
   }
   #default-btn {
     font-size: 13px;
@@ -583,11 +591,6 @@ card {
     margin-top: 40px;
     /* padding: 60px; */
   }
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
   #tab-content-container {
     position: relative;
     margin-top: 40px;
