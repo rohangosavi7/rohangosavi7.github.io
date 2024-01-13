@@ -253,33 +253,12 @@ header {
   margin-bottom: 20px;
   font-weight: 600;
 }
-.sec-text {
+.typewrite {
   position: relative;
   color: var(--color-purple);
   z-index: -2;
 }
-.sec-text::before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--color-primary);
-  border-left: 2px solid var(--color-purple);
-  animation: typing 4s steps(12) infinite;
-  z-index: 0;
-}
 
-@keyframes typing {
-  40%,
-  60% {
-    left: calc(100% + 4px);
-  }
-  100% {
-    left: 0%;
-  }
-}
 .left-about p {
   font-size: 1.2em;
   margin-bottom: 50px;
@@ -310,7 +289,6 @@ header {
 }
 
 /* skills  */
-
 .skills {
   width: 100%;
   margin-top: 20px;
