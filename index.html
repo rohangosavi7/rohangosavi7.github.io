@@ -1,555 +1,461 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rohan Gosavi Portfolio</title>
+    <title>Rohan Gosavi</title>
 
     <!-- css files -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <link rel="stylesheet" href="style.css" />
+    <!-- vendor css files -->
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- vendor js files -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
+
   <body>
-    <header id="header" class="header">
-      <a id="logo" href="#">Rohan Gosavi</a>
-      <input type="checkbox" name="" id="check" />
-      <label for="check" class="icons">
-        <img id="menu-icon" src="assets/images/hamburger .png" alt="" />
-        <img id="close-icon" src="assets/images/close.png" alt="" />
-      </label>
-      <nav id="navbar">
-        <ul>
-          <li><a href="#about" style="--i: 0">About</a></li>
-          <li><a href="#skills" style="--i: 1">Skills</a></li>
-          <li><a href="#experience" style="--i: 2">Experience</a></li>
-          <li><a href="#projects" style="--i: 3">Project</a></li>
-        </ul>
-      </nav>
-      <a
-        href="https://github.com/rohangosavi7"
-        id="default-btn"
-        target="”_blank”"
-        class="github-link"
-        >Github Profile</a
-      >
-    </header>
+    <div
+      class="main d-flex flex-row align-items-center justify-content-center gap-4"
+    >
+      <div class="main-col1 pri-container">
+        <div
+          class="profile d-flex flex-column align-items-center justify-content-center row-gap-2"
+        >
+          <!-- my avatar div -->
+          <div class="my-avatar">
+            <img src="assets/images/my-avatar.png" alt="rohan-gosavi" />
+          </div>
+          <h2>Rohan Gosavi</h2>
+          <p>Web Developer</p>
+        </div>
+        <!-- uder my avatar contact details -->
+        <div class="contact-details">
+          <li>
+            <ul class="d-flex column-gap-3 py-1 w-100 h-100">
+              <img src="assets/images/icons8-email-100.png" alt="" />
+              <div
+                class="contact-details-child d-flex flex-column justify-content-center"
+              >
+                <p>Email</p>
+                <p>rohangosavi5577@gmail.com</p>
+              </div>
+            </ul>
+            <ul class="d-flex column-gap-3 py-1 w-100 h-100">
+              <img src="assets/images/icons8-phone-100.png" alt="" />
+              <div
+                class="contact-details-child d-flex flex-column justify-content-center"
+              >
+                <p>Phone</p>
+                <p>+91 8983608001</p>
+              </div>
+            </ul>
 
-    <main>
-      <!-- about -->
-      <div class="about container" id="about">
-        <div class="inner-about">
-          <div class="left-about">
-            <h1>
-              Hi, I am <br />
-              Rohan Gosavi
-            </h1>
-            <h2>I am a <span class="typewrite" data-period="1000" data-type='["Frontend Developer","Wordpress Developer","FullStack Developer"]'></span></h2>
+            <ul class="d-flex column-gap-3 py-1 w-100 h-100">
+              <img src="assets/images/icons8-calendar-64.png" alt="" />
+              <div
+                class="contact-details-child d-flex flex-column justify-content-center"
+              >
+                <p>Birthday</p>
+                <p>25 Oct 2003</p>
+              </div>
+            </ul>
+
+            <ul class="d-flex column-gap-3 p w-100 h-100">
+              <img src="assets/images/icons8-location-100.png" alt="" />
+              <div
+                class="contact-details-child d-flex flex-column justify-content-center"
+              >
+                <p>Location</p>
+                <p>Hadapsar, Pune</p>
+              </div>
+            </ul>
+          </li>
+        </div>
+      </div>
+      <div class="main-col2 pri-container">
+        <header class="header">
+          <div class="d-flex align-items-center py-2 px-5 gap-5">
+            <a href="#" onclick="showSection('about')">About</a>
+            <a href="#" onclick="showSection('resume')">Resume</a>
+            <a href="#" onclick="showSection('portfolio')">Portfolio</a>
+            <a href="#" onclick="showSection('contact')">Contact</a>
+          </div>
+        </header>
+        <section id="about">
+          <div class="about-me container" >
+            <h2 class="pri-heading">About Me</h2>
+            <div id="hor-divider"></div>
             <p>
-              I am a motivated and adaptable individual, consistently seeking
-              out new challenges to fuel my growth. Infused with a positive
-              attitude and a commitment to continuous learning, I'm poised to
-              create a significant impact and accomplish remarkable feats.
+              I am a motivated and adaptable individual, consistently seeking out
+              new challenges to fuel my growth. Infused with a positive attitude
+              and a commitment to continuous learning, I'm poised to create a
+              significant impact and accomplish remarkable feats. <br />My job is
+              to build your website so that it is functional and user-friendly but
+              at the same time attractive. Moreover, I add personal touch to your
+              product and make sure that is eye-catching and easy to use.
             </p>
-            <a href="/assets/Rohan's Resume.pdf" id="default-btn" target="”_blank”"
-              >Check Resume</a
-            >
-          </div>
-          <div class="right-about">
-            <div class="blob-container">
-              <div class="blob"></div>
-              <div class="blob one"></div>
-              <div class="blob two"></div>
-              <div class="blob three"></div>
-              <div class="blob four"></div>
-              <div class="blob five"></div>
+            <h3 class="sec-heading">What I'm Doing</h3>
+            <div class="cards d-flex w-100 flex-wrap gap-3">
+              <div class="cards-child sec-container d-flex gap-3">
+                <img
+                  src="assets/images/icons8-web-design-100.png"
+                  alt="icons8-web-design-100.png"
+                />
+                <div>
+                  <h4>Web Design</h4>
+                  <p>
+                    The most modern and high-quality design made at a professional
+                    level.
+                  </p>
+                </div>
+              </div>
+              <div class="cards-child sec-container d-flex gap-3">
+                <img
+                  src="assets/images/icons8-web-development-100.png"
+                  alt="icons8-web-design-100.png"
+                />
+                <div>
+                  <h4>Web Development</h4>
+                  <p>
+                    The most modern and high-quality design made at a professional
+                    level.
+                  </p>
+                </div>
+              </div>
+              <div class="cards-child sec-container d-flex gap-3">
+                <img
+                  src="assets/images/icons8-web-design-100.png"
+                  alt="icons8-web-design-100.png"
+                />
+                <div>
+                  <h4>Web Apps</h4>
+                  <p>
+                    The most modern and high-quality design made at a professional
+                    level.
+                  </p>
+                </div>
+              </div>
+              <div class="cards-child sec-container d-flex gap-3">
+                <img
+                  src="assets/images/icons8-content-creation-68.png"
+                  alt="icons8-web-design-100.png"
+                />
+                <div>
+                  <h4>Content Creation</h4>
+                  <p>
+                    The most modern and high-quality design made at a professional
+                    level.
+                  </p>
+                </div>
+              </div>
             </div>
-            <img src="assets/images/rohan-gosavi.jpg" alt="" />
           </div>
-        </div>
+        </section>
+        <!-- about me end -->
+        <section id="resume">
+          <div class="resume container">
+
+
+
+            <h2 class="pri-heading">Resume</h2>
+            <div id="hor-divider"></div>
+            <div>
+              <div class="d-flex gap-3 align-items-center">
+                <img
+                  class="icon-box"
+                  src="assets/images/icons8-phone-100.png"
+                  alt=""
+                />
+                <h3 class="sec-heading">Education</h3>
+              </div>
+              <ul class="timeline-list">
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">
+                    Sharda Junior College, Rahata
+                  </h4>
+                  <span>2019 — 2021</span>
+                  <p class="timeline-text">
+                    Ratione voluptatem sequi nesciunt, facere quisquams facere
+                    menda ossimus, omnis voluptas assumenda est omnis..
+                  </p>
+                </li>
+  
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">JSPM's JSCOE, Pune</h4>
+                  <span>2021 — 2025</span>
+                  <p class="timeline-text">
+                    Duis aute irure dolor in reprehenderit in voluptate, quila
+                    voluptas mag odit aut fugit, sed consequuntur magni dolores
+                    eos.
+                  </p>
+                </li>
+              </ul>
+            </div>
+  
+            <!-- Experience -->
+            <div>
+              <div class="d-flex gap-3 align-items-center">
+                <img
+                  class="icon-box"
+                  src="assets/images/icons8-phone-100.png"
+                  alt=""
+                />
+                <h3 class="sec-heading">Experience</h3>
+              </div>
+              <ul class="exp-timeline-list">
+                <li class="exp-timeline-item">
+                  <h4 class="h4 timeline-item-title">
+                    Intern Yhills Edutech Pvt. Ltd.
+                  </h4>
+                  <span>Oct-2023 — Dec-2023</span>
+                  <p class="exp-timeline-text">
+                    Ratione voluptatem sequi nesciunt, facere quisquams facere
+                    menda ossimus, omnis voluptas assumenda est omnis..
+                  </p>
+                </li>
+  
+                <li class="exp-timeline-item">
+                  <h4 class="h4 timeline-item-title">
+                    Intern Edunexa Tech ( from AICTE), Pune
+                  </h4>
+                  <span>Dec 2023 — Jan 2024</span>
+                  <p class="exp-timeline-text">
+                    Duis aute irure dolor in reprehenderit in voluptate, quila
+                    voluptas mag odit aut fugit, sed consequuntur magni dolores
+                    eos.
+                  </p>
+                </li>
+                <li class="exp-timeline-item">
+                  <h4 class="h4 timeline-item-title">
+                    Intern Octanet solutions pvt. ltd.
+                  </h4>
+                  <span>Jan 2023 — Jan 2024</span>
+                  <p class="exp-timeline-text">
+                    Duis aute irure dolor in reprehenderit in voluptate, quila
+                    voluptas mag odit aut fugit, sed consequuntur magni dolores
+                    eos.
+                  </p>
+                </li>
+                <li class="exp-timeline-item">
+                  <h4 class="h4 timeline-item-title">
+                    Intern Sudoku Codeclause pvt. ltd.
+                  </h4>
+                  <span>Dec 2023 — Jan 2024</span>
+                  <p class="exp-timeline-text">
+                    Duis aute irure dolor in reprehenderit in voluptate, quila
+                    voluptas mag odit aut fugit, sed consequuntur magni dolores
+                    eos.
+                  </p>
+                </li>
+              </ul>
+            </div>
+  
+            <!-- My skills -->
+            <div class="my-skills">
+              <h2 class="sec-heading">My Skills</h2>
+              <div class="sec-container p-4">
+                <h4>Web Design <span>70%</span></h4>
+                <div class="progress-bar my-3">
+                  <div class="progress" style="width: 70%"></div>
+                </div>
+                <h4>Web Development <span>90%</span></h4>
+                <div class="progress-bar my-3">
+                  <div class="progress" style="width: 90%"></div>
+                </div>
+                <h4>Version Control <span>60%</span></h4>
+                <div class="progress-bar my-3">
+                  <div class="progress" style="width: 60%"></div>
+                </div>
+                <h4>
+                  Backend development (learning at the moment) <span>40%</span>
+                </h4>
+                <div class="progress-bar my-3">
+                  <div class="progress" style="width: 40%"></div>
+                </div>
+                <h4>Data Structures and Algorithms <span>50%</span></h4>
+                <div class="progress-bar my-3">
+                  <div class="progress" style="width: 50%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+
+          <div class="portfolio container">
+            <h2 class="pri-heading">Portfolio</h2>
+  
+            <div id="hor-divider"></div>
+  
+            <div class="tabs d-flex gap-3">
+              <h3 data-tab-target="#all" class="active">All</h3>
+  
+              <h3 data-tab-target="#web-design">Web App's</h3>
+  
+              <h3 data-tab-target="#wordpress">wordpress</h3>
+  
+              <h3 data-tab-target="#web-development">Web Development</h3>
+            </div>
+  
+            <div class="tab-content">
+              <div id="all" data-tab-content class="active">
+                <div id="tab-content-container">
+                  <div class="tab-content-card">
+                    <img src="assets/images/project-1.jpg" alt="" />
+                    <h4>The Dog Spot</h4>
+                    <p>Web Development</p>
+                  </div>
+  
+                  <div class="tab-content-card">
+                    <img src="assets/images/project-2.png" alt="" />
+                    <h4>The Dog Spot</h4>
+                    <p>Web Development</p>
+                  </div>
+  
+                  <div class="tab-content-card">
+                    <img src="assets/images/project-3.jpg" alt="" />
+                    <h4>The Dog Spot</h4>
+                    <p>Web Development</p>
+                  </div>
+  
+                  <div class="tab-content-card">
+                    <img src="assets/images/project-4.png" alt="" />
+                    <h4>The Dog Spot</h4>
+                    <p>Web Development</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div id="web-design" data-tab-content>
+                <div id="tab-content-container">
+                  <div class="tab-content-card">
+                    <img src="assets/images/project-1.jpg" alt="" />
+                    <h4>The Dog Spot</h4>
+                    <p>Web Development</p>
+                  </div>
+  
+                  <div class="tab-content-card">
+                    <img src="assets/images/project-2.png" alt="" />
+                    <h4>The Dog Spot</h4>
+                    <p>Web Development</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div id="wordpress" data-tab-content>
+                <div id="tab-content-container">
+                  <div class="tab-content-card">
+                    <img src="assets/images/project-3.jpg" alt="" />
+                    <h4>The Dog Spot</h4>
+                    <p>Web Development</p>
+                  </div>
+  
+                  <div class="tab-content-card">
+                    <img src="assets/images/project-4.png" alt="" />
+                    <h4>The Dog Spot</h4>
+                    <p>Web Development</p>
+                  </div>
+  
+                  <div class="tab-content-card">
+                    <img src="assets/images/project-3.jpg" alt="" />
+                    <h4>The Dog Spot</h4>
+                    <p>Web Development</p>
+                  </div>
+  
+                  <div class="tab-content-card">
+                    <img src="assets/images/project-4.png" alt="" />
+                    <h4>The Dog Spot</h4>
+                    <p>Web Development</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div id="web-development" data-tab-content>
+                <div id="tab-content-container">
+                  <div class="tab-content-card">
+                    <img src="assets/images/project-4.png" alt="" />
+                    <h4>The Dog Spot</h4>
+                    <p>Web Development</p>
+                  </div>
+  
+                  <div class="tab-content-card">
+                    <img src="assets/images/project-3.jpg" alt="" />
+                    <h4>The Dog Spot</h4>
+                    <p>Web Development</p>
+                  </div>
+  
+                  <div class="tab-content-card">
+                    <img src="assets/images/project-4.png" alt="" />
+                    <h4>The Dog Spot</h4>
+                    <p>Web Development</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+
+        <!-- contact -->
+        <section id="contact">
+          <div class="contact container" >
+            <h2 class="pri-heading">Contact Me</h2>
+            <div id="hor-divider"></div>
+  
+            <form action="" id="myForm">
+              <input type="text" placeholder="Your Name" />
+              <input type="email" name="" placeholder="Your Email" />
+              <textarea placeholder="Your Message"></textarea>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
       </div>
+    </div>
 
-      <!-- skillls -->
-      <div class="skills container" id="skills">
-        <div id="skills-desc">
-          <h2 id="h2-heading">Skills</h2>
-          <h4 id="h4-heading">
-            Here are some of my skills on which I have been working on <br />for
-            the past 2 years.
-          </h4>
-        </div>
-        <div class="skills-cards-section">
-          <div id="frontend " class="skill-card">
-            <h2>Frontend</h2>
-            <div class="html skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                alt=""
-              />HTML
-            </div>
-            <div class="css skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                alt=""
-              />CSS
-            </div>
-            <div class="javascript skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                alt=""
-              />Javascript
-            </div>
-            <div class="bootstrap skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                alt=""
-              />Bootstrap
-            </div>
-            <div class="react skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                alt=""
-              />React
-            </div>
-            <div class="tailwind skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwind/tailwind-original.svg"
-                alt=""
-              />Tailwind
-            </div>
-          </div>
+    <script type="module" src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
 
-          <div id="backend" class="skill-card">
-            <h2>Backend</h2>
-            <div class="mysql skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
-                alt=""
-              />MYSQL
-            </div>
-            <div class="mongodb skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-                alt=""
-              />MongoDB
-            </div>
-            <div class="php skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                alt=""
-              />PHP
-            </div>
-            <div class="nodejs skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
-                alt=""
-              />NodeJS
-            </div>
-          </div>
+    <script>
+      function showSection(sectionId) {
+        document.getElementById(sectionId).style.display = "block";
+        // Hide all sections
+        document.querySelectorAll("section").forEach(function (section) {
+          section.style.display = "none";
+        });
 
-          <div id="android" class="skill-card">
-            <h2>Android</h2>
-            <div class="java skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                alt=""
-              />Java
-            </div>
-          </div>
-          <div id="others" class="skill-card">
-            <h2>Others</h2>
-            <div class="github skill-card-element">
-              <i class="devicon-github-original"></i>Github
-            </div>
-            <div class="vscode skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                alt=""
-              />VS code
-            </div>
-            <div class="wordpress skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
-              />Wordpress
-            </div>
-            <div class="linux skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-              />
-              Linux
-            </div>
-            <div class="canva skill-card-element">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
-              />Canva
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- skills closed -->
-      <!-- projects -->
-      <div class="projects container" id="projects">
-        <h2 id="h2-heading">Projects</h2>
-        <h4 id="h4-heading">
-          I have worked on a wide range of projects. From web apps to android
-          apps.<br />Here are some of my projects.
-        </h4>
-
-        <div class="tabs">
-          <h3 data-tab-target="#all" class="active">All</h3>
-          <div class="divider"></div>
-          <h3 data-tab-target="#web-apps">Web App's</h3>
-          <div class="divider"></div>
-          <h3 data-tab-target="#mini-projects">Mini-projects</h3>
-        </div>
-        <!-- all prjects -->
-        <div class="tab-content">
-          <div id="all" data-tab-content class="active">
-            <div id="tab-content-container">
-              <div id="project-card">
-                <img src="assets/images/the-dog-spot.png" alt="" />
-                <h3 id="title">The Dog Spot</h3>
-                <p id="date">nov 2022 - feb 2023</p>
-                <p id="desc">
-                  A user-friendly pet adoption website connecting people with
-                  their furry companions. You can search for and learn about
-                  pets available for adoption. I built this with love for
-                  animals and the web.
-                </p>
-                <div id="card-buttons">
-                  <a
-                    href="https://github.com/rohangosavi7/thedogspot"
-                    id="btn1"
-                    target="”_blank”"
-                    >View Code</a
-                  >
-                  <a
-                    href="https://dogspot.vercel.app/"
-                    id="btn2"
-                    target="”_blank”"
-                    >Live Preview</a
-                  >
-                </div>
-              </div>
-              <div id="project-card">
-                <img src="assets/images/golf-club.png" alt="" />
-                <h3 id="title">Golf Club Website Clone</h3>
-                <p id="date">Nov 2022 - Feb 2023</p>
-                <p id="desc">
-                  I recreated a golf club's website from scratch, mimicking its
-                  design and functionality. This project allowed me to practice
-                  web development skills and showcase my ability to replicate an
-                  existing site's look and features. It's a testament to my
-                  front-end development expertise.
-                </p>
-                <div id="card-buttons">
-                  <a
-                    href="https://github.com/rohangosavi7/golf-club"
-                    id="btn1"
-                    target="”_blank”"
-                    >View Code</a
-                  >
-                  <a
-                    href="https://golf-club.vercel.app/"
-                    id="btn2"
-                    target="”_blank”"
-                    >Live Preview</a
-                  >
-                </div>
-              </div>
-              <div id="project-card">
-                <img src="assets/images/developerssociety.png" alt="" />
-                <h3 id="title">Developers Society</h3>
-                <p id="date">aug 2023 - nov 2023</p>
-                <p id="desc">
-                  I created a dynamic WordPress site for the DeveloperSociety
-                  Instagram page, providing a visually appealing and
-                  user-friendly platform to engage the developer community. The
-                  website offers an interactive space for developers to connect,
-                  learn, and share insights. It's a testament to my web
-                  development skills and dedication to fostering an inclusive
-                  community for tech enthusiasts.
-                </p>
-                <div id="card-buttons">
-                  <a href="#" id="btn1" target="”_blank”">View Code</a>
-                  <a
-                    href="https://developerssociety.com"
-                    id="btn2"
-                    target="”_blank”"
-                    >Live Preview</a
-                  >
-                </div>
-              </div>
-              <div id="project-card">
-                <img src="assets/images/bulb.png" alt="" />
-                <h3 id="title">Light on-off using JS</h3>
-                <p id="date">july 2023</p>
-                <p id="desc">
-                  I developed a simple and fun JavaScript project that allows
-                  users to toggle a virtual light on and off. This interactive
-                  project showcases my JavaScript coding skills and creativity
-                  in a straightforward and engaging way. It's a small yet
-                  delightful example of my web development abilities.
-                </p>
-                <div id="card-buttons">
-                  <a
-                    href="https://github.com/rohangosavi7/lightOnOff"
-                    id="btn1"
-                    target="”_blank”"
-                    >View Code</a
-                  >
-                  <a
-                    href="https://lightonoff.vercel.app/"
-                    id="btn2"
-                    target="”_blank”"
-                    >Live Preview</a
-                  >
-                </div>
-              </div>
-              <div id="project-card">
-                <img src="assets/images/js-clock.png" alt="" />
-                <h3 id="title">Clock using JS</h3>
-                <p id="date">Aug 2023</p>
-                <p id="desc">
-                  Designed a dynamic clock using JavaScript that displays the
-                  current time in a user-friendly format. This project showcases
-                  my ability to manipulate time and interface elements using
-                  JavaScript, creating a practical and visually appealing
-                  application.
-                </p>
-                <div id="card-buttons">
-                  <a
-                    href="hhttps://github.com/rohangosavi7/Js-Clock"
-                    id="btn1"
-                    target="”_blank”"
-                    >View Code</a
-                  >
-                  <a
-                    href="https://jsclock-sigma.vercel.app/"
-                    id="btn2"
-                    target="”_blank”"
-                    >Live Preview</a
-                  >
-                </div>
-              </div>
-              <div id="project-card">
-                <img src="assets/images/quote-generator.png" alt="" />
-                <h3 id="title">Quote Generator</h3>
-                <p id="date">Aug 2023</p>
-                <p id="desc">
-                  I created a straightforward quote generator using JavaScript.
-                  With a click, it displays random quotes. Though it's a basic
-                  project, it demonstrates my ability to work with JavaScript
-                  and create small, practical web applications.
-                </p>
-                <div id="card-buttons">
-                  <a
-                    href="https://github.com/rohangosavi7/quote-generator"
-                    id="btn1"
-                    target="”_blank”"
-                    >View Code</a
-                  >
-                  <a
-                    href="https://quote-generator-psi.vercel.app/"
-                    id="btn2"
-                    target="”_blank”"
-                    >Live Preview</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- web apps -->
-          <div id="web-apps" data-tab-content>
-            <div id="tab-content-container">
-              <div id="project-card">
-                <img src="assets/images/the-dog-spot.png" alt="" />
-                <h3 id="title">The Dog Spot</h3>
-                <p id="date">nov 2022 - feb 2023</p>
-                <p id="desc">
-                  A user-friendly pet adoption website connecting people with
-                  their furry companions. You can search for and learn about
-                  pets available for adoption. I built this with love for
-                  animals and the web.
-                </p>
-                <div id="card-buttons">
-                  <a
-                    href="https://github.com/rohangosavi7/thedogspot"
-                    id="btn1"
-                    target="”_blank”"
-                    >View Code</a
-                  >
-                  <a
-                    href="https://dogspot.vercel.app/"
-                    id="btn2"
-                    target="”_blank”"
-                    >Live Preview</a
-                  >
-                </div>
-              </div>
-              <div id="project-card">
-                <img src="assets/images/golf-club.png" alt="" />
-                <h3 id="title">Golf Club Website Clone</h3>
-                <p id="date">Nov 2022 - Feb 2023</p>
-                <p id="desc">
-                  I recreated a golf club's website from scratch, mimicking its
-                  design and functionality. This project allowed me to practice
-                  web development skills and showcase my ability to replicate an
-                  existing site's look and features. It's a testament to my
-                  front-end development expertise.
-                </p>
-                <div id="card-buttons">
-                  <a
-                    href="https://github.com/rohangosavi7/golf-club"
-                    id="btn1"
-                    target="”_blank”"
-                    >View Code</a
-                  >
-                  <a
-                    href="https://golf-club.vercel.app/"
-                    id="btn2"
-                    target="”_blank”"
-                    >Live Preview</a
-                  >
-                </div>
-              </div>
-              <div id="project-card">
-                <img src="assets/images/developerssociety.png" alt="" />
-                <h3 id="title">Developers Society</h3>
-                <p id="date">aug 2023 - nov 2023</p>
-                <p id="desc">
-                  I created a dynamic WordPress site for the DeveloperSociety
-                  Instagram page, providing a visually appealing and
-                  user-friendly platform to engage the developer community. The
-                  website offers an interactive space for developers to connect,
-                  learn, and share insights. It's a testament to my web
-                  development skills and dedication to fostering an inclusive
-                  community for tech enthusiasts.
-                </p>
-                <div id="card-buttons">
-                  <a href="#" id="btn1" target="”_blank”">View Code</a>
-                  <a
-                    href="https://developerssociety.com"
-                    id="btn2"
-                    target="”_blank”"
-                    >Live Preview</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- mini-projects -->
-          <div id="mini-projects" data-tab-content>
-            <div id="tab-content-container">
-              <div id="project-card">
-                <img src="assets/images/bulb.png" alt="" />
-                <h3 id="title">Light on-off using JS</h3>
-                <p id="date">july 2023</p>
-                <p id="desc">
-                  I developed a simple and fun JavaScript project that allows
-                  users to toggle a virtual light on and off. This interactive
-                  project showcases my JavaScript coding skills and creativity
-                  in a straightforward and engaging way. It's a small yet
-                  delightful example of my web development abilities.
-                </p>
-                <div id="card-buttons">
-                  <a
-                    href="https://github.com/rohangosavi7/lightOnOff"
-                    id="btn1"
-                    target="”_blank”"
-                    >View Code</a
-                  >
-                  <a
-                    href="https://lightonoff.vercel.app/"
-                    id="btn2"
-                    target="”_blank”"
-                    >Live Preview</a
-                  >
-                </div>
-              </div>
-              <div id="project-card">
-                <img src="assets/images/js-clock.png" alt="" />
-                <h3 id="title">Clock using JS</h3>
-                <p id="date">Aug 2023</p>
-                <p id="desc">
-                  Designed a dynamic clock using JavaScript that displays the
-                  current time in a user-friendly format. This project showcases
-                  my ability to manipulate time and interface elements using
-                  JavaScript, creating a practical and visually appealing
-                  application.
-                </p>
-                <div id="card-buttons">
-                  <a
-                    href="hhttps://github.com/rohangosavi7/Js-Clock"
-                    id="btn1"
-                    target="”_blank”"
-                    >View Code</a
-                  >
-                  <a
-                    href="https://jsclock-sigma.vercel.app/"
-                    id="btn2"
-                    target="”_blank”"
-                    >Live Preview</a
-                  >
-                </div>
-              </div>
-              <div id="project-card">
-                <img src="assets/images/quote-generator.png" alt="" />
-                <h3 id="title">Quote Generator</h3>
-                <p id="date">Aug 2023</p>
-                <p id="desc">
-                  I created a straightforward quote generator using JavaScript.
-                  With a click, it displays random quotes. Though it's a basic
-                  project, it demonstrates my ability to work with JavaScript
-                  and create small, practical web applications.
-                </p>
-                <div id="card-buttons">
-                  <a
-                    href="https://github.com/rohangosavi7/quote-generator"
-                    id="btn1"
-                    target="”_blank”"
-                    >View Code</a
-                  >
-                  <a
-                    href="https://quote-generator-psi.vercel.app/"
-                    id="btn2"
-                    target="”_blank”"
-                    >Live Preview</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- experience -->
-      <!-- <div class="experience container" id="experience">
-        <h2 id="h2-heading">Experience</h2>
-        <h4 id="h4-heading">
-          My work experience as a software engineer and working on
-          <br />different companies and projects.
-        </h4>
-
-        <div class="experiences-cards">
-          <div class="inner-experiences-cards">
-            <div class="experiences-card card">
-
-            </div>
-            <div class="experiences-card card">
-
-            </div>
-            <div class="experiences-card card">
-
-            </div>
-          </div>
-        </div>
-      </div> -->
-    </main>
-
-    <script src="script.js"></script>
+        // Show the selected section
+        document.getElementById(sectionId).style.display = "block";
+      }
+    </script>
   </body>
 </html>
