@@ -22,17 +22,20 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 html {
   height: 100%;
   width: 100%;
+  
 }
 body {
   scroll-behavior: smooth;
   scrollbar-width: 20px;
   margin: 0;
   box-sizing: border-box;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 4px;
@@ -79,6 +82,7 @@ body {
 
 /* header */
 .header {
+  /* max-height: 50px; */
   top: 5.2rem;
   width: 35%;
   position: absolute;
@@ -98,8 +102,8 @@ body {
 .header nav li {
   display: flex;
   align-items: center;
-  gap: 40px;
-  padding: 10px 25px;
+  column-gap: 40px;
+  padding: 5px 20px;
 }
 .header nav li a {
   text-decoration: none;
@@ -126,11 +130,15 @@ body {
   display: none;
 }
 
-#navbar {
+/* #navbar {
   /* display: flex;
   align-items: center;
   column-gap: 50px;
-  justify-content: space-between; */
+  justify-content: space-between; 
+} */
+#navbar{
+  height: 50px;
+  width: 100%;
 }
 
 #navbar li a {
@@ -260,7 +268,8 @@ body {
   color: #c7c7c7;
   text-transform: uppercase;
   letter-spacing: 2px;
-  line-height: 1px;
+  line-height: 2px;
+  margin-bottom: 22px;
 }
 .contact-details-child p:nth-child(2) {
   font-size: 15px;
@@ -271,7 +280,7 @@ body {
 /* about me */
 
 .about-me {
-  width: 96% !important;
+  width: 100% !important;
 }
 .container {
   color: #fff;
@@ -356,7 +365,7 @@ body {
   top: 130px;
   left: 28px;
   width: 1px;
-  height: calc(20% + 12px);
+  height: calc(10% + 12px);
   background: #434e94;
 }
 .timeline-item .timeline-item-title,
@@ -369,10 +378,10 @@ body {
   content: "";
   position: absolute;
   z-index: 1;
-  top: calc(45% + 50px);
+  top: calc(30% + 50px);
   left: 28px;
   width: 1px;
-  height: calc(38% + 10px);
+  height: calc(26% + 10px);
   background: #434e94;
 }
 .exp-timeline-item .timeline-item-title {
@@ -503,7 +512,7 @@ textarea {
   border-radius: 15px;
   border: 1px solid #9b9b9b;
   margin: 10px !important;
-  width: 97.5%;
+  width: 100%;
   height: 200px;
 }
 input::placeholder,
@@ -511,11 +520,11 @@ textarea::placeholder {
   color: #ffffff;
 }
 
-button {
+form input[type="submit"] {
   color: #fff;
 }
-button:hover {
-  background-color: #434e9491;
+form input[type="submit"]:hover {
+  background-color: var(--color-container-sec);
 }
 
 #resume,
@@ -544,8 +553,31 @@ button:hover {
     flex-wrap: wrap;
   }
 
-  .container {
-  }
+  
+.tabs {
+  position: relative;
+  flex-direction: column !important;
+}
+.tabs h3 {
+  line-height: 1;
+}
+
+#tab-content-container {
+  margin-top: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.tab-content-card{
+  padding: 5px 0;
+}
+.tab-content-card > p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.tab-content-card h4 {
+  line-height: 1.5;
+  margin-top: 10px;
+}
 }
 
 /* Responsive designs */
@@ -585,9 +617,10 @@ button:hover {
   }
 
   .header {
-    width: auto;
+    /* max-width: 30px; */
     background: none;
     backdrop-filter: none;
+    box-shadow: none;
     top: 10px;
     width: 56%;
     position: absolute;
