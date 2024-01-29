@@ -248,7 +248,7 @@ body {
   border-top: 1px solid rgba(121, 121, 220, 0.6);
   border-left: 1px solid rgba(121, 121, 220, 0.6);
   background: rgba(62, 62, 120, 0.5);
-  box-shadow: 2px 2px 8.1px 0px rgba(144, 144, 144, 0.16) inset;
+  box-shadow: 2px 2px 8.1px 0px rgba(119, 119, 119, 0.16) inset;
 }
 .contact-details li ul > img,
 .icon-box {
@@ -303,28 +303,28 @@ body {
 }
 .cards-child {
   width: 45%;
-  height: 130px;
+  height: 140px;
   flex-shrink: 0;
   padding: 15px;
 }
 .cards-child > img {
-  width: 50px;
-  height: 48px;
+  width: 45px;
+  height: 42px;
   flex-shrink: 0;
   background: url(<path-to-image>), contain no-repeat;
 }
 .cards-child > div > h4 {
   color: #fff;
   font-family: Poppins;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 400;
 }
 .cards-child > div > p {
   width: 100%;
-  color: #cbcbcb;
+  color: #bcbcbc;
   font-size: 15px;
   font-weight: 400;
-  line-height: 27px; /* 168.75% */
+  line-height: 25px; /* 168.75% */
 }
 
 /* resume section */
@@ -336,11 +336,22 @@ body {
   margin-left: 20px;
 }
 
-.timeline-item::after,
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  margin-top: -10%;
+  left: 24px;
+  height: 9px;
+  width: 9px;
+  background: #eaeaea;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--jet);
+  z-index: 2;
+}
 .exp-timeline-item::after {
   content: "";
   position: absolute;
-  margin-top: -110px;
+  margin-top: -132px;
   left: 24px;
   height: 9px;
   width: 9px;
@@ -365,7 +376,7 @@ body {
   top: 130px;
   left: 28px;
   width: 1px;
-  height: calc(10% + 12px);
+  height: 8%;
   background: #434e94;
 }
 .timeline-item .timeline-item-title,
@@ -378,15 +389,21 @@ body {
   content: "";
   position: absolute;
   z-index: 1;
-  top: calc(30% + 50px);
+  top: calc(25% + 50px);
   left: 28px;
   width: 1px;
-  height: calc(26% + 10px);
+  height:34%;
   background: #434e94;
 }
 .exp-timeline-item .timeline-item-title {
   font-size: 16px;
   font-weight: 400;
+}
+.exp-timeline-item span, .timeline-item span{
+  color: #899bf4;
+}
+.exp-timeline-text, .timeline-text{
+  font-size: 15px;
 }
 
 /* my skills */
@@ -450,6 +467,7 @@ body {
 .tab-content-card > img {
   width: 90%;
   border-radius: 10px;
+  aspect-ratio: 16/9;
   cursor: pointer;
   transition: all 0.4s;
 }
