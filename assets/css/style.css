@@ -38,8 +38,9 @@ body {
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
+  display: none;
   width: 4px;
-  height: 80px;
+  height: 2px;
 }
 
 /* Track */
@@ -139,6 +140,7 @@ body {
 #navbar{
   height: 50px;
   width: 100%;
+  overflow: scroll;
 }
 
 #navbar li a {
@@ -181,6 +183,7 @@ body {
 .main-col1 {
   width: 23%;
   height: 80%;
+  overflow: auto;
 }
 .main-col2 {
   width: 60%;
@@ -263,6 +266,11 @@ body {
   background: rgba(62, 62, 120, 0.5);
   box-shadow: 2px 2px 8.1px 0px rgba(144, 144, 144, 0.16) inset;
 }
+.contact-details li ul a > img{
+  height: 35px;
+  width: 35px;
+}
+
 .contact-details-child p:nth-child(1) {
   font-size: 14px;
   color: #c7c7c7;

@@ -47,3 +47,11 @@ document.getElementById("myForm").onsubmit = function (event) {
             alert("Something went wrong:");
         });
 };
+
+// function socialImgHover ( ) {
+//     //     thisImg = document.querySelectorAll('.social-img')
+    
+//     //     console.log("clicked")
+//     //     console.log(thisImg["src"])
+//     //     document.querySelectorAll('.social-img').src = "https://img.icons8.com/ios-filled/100/ffffff/github.png";
+//     // }
