@@ -41,17 +41,10 @@ document.getElementById("myForm").onsubmit = function (event) {
     emailjs.send("service_7z743xp", "template_ll3zogn", formData)
         .then(function (response) {
             console.log("Sent successfully:", response);
-            alert("Sent successfully", response);
+            alert("Sent successfully");
         }, function (error) {
             console.log("Failed to send:", error);
-            alert("Something went wrong:");
+            alert("Something went wrong");
         });
 };
 
-// function socialImgHover ( ) {
-//     //     thisImg = document.querySelectorAll('.social-img')
-    
-//     //     console.log("clicked")
-//     //     console.log(thisImg["src"])
-//     //     document.querySelectorAll('.social-img').src = "https://img.icons8.com/ios-filled/100/ffffff/github.png";
-//     // }
