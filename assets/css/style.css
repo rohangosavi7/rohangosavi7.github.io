@@ -451,15 +451,48 @@ body {
 }
 
 .tabs {
+  width: 100vw;
   position: relative;
   margin: 22px 0px;
+  overflow: scroll !important;
 }
 .tabs h3 {
   cursor: pointer;
   font-size: 16px;
-  color: #cbcbcb;
+  color: #ededed;
   font-weight: 400;
+  position: relative;
+  background-color: #6f1ebb;
+  padding: 8px 12px;
+  border-radius: 12px;
+  transition: all .4s ease;
+
 }
+.tabs::-webkit-scrollbar{
+  height: 30px;
+}
+
+.tabs h3:hover{
+  filter: brightness(.9);
+  transform: translateY(-5px);
+}
+/* .tabs h3::after {
+  content: " ";
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  left: 50%;
+  background: #8318e7;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+
+.tabs h3:hover::after {
+  width: 80%;
+} */
+
 
 #tab-content-container {
   position: relative;
@@ -581,8 +614,11 @@ form input[type="submit"]:hover {
 
   
 .tabs {
+  width: 100% !important; 
   position: relative;
-  flex-direction: column !important;
+
+  flex-wrap: nowrap;
+  /* flex-direction: column !important; */
 }
 .tabs h3 {
   line-height: 1;
