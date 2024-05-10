@@ -451,10 +451,10 @@ body {
 }
 
 .tabs {
-  width: 100vw;
   position: relative;
+  flex-wrap: wrap;
   margin: 22px 0px;
-  overflow: scroll !important;
+
 }
 .tabs h3 {
   cursor: pointer;
@@ -468,9 +468,7 @@ body {
   transition: all .4s ease;
 
 }
-.tabs::-webkit-scrollbar{
-  height: 30px;
-}
+
 
 .tabs h3:hover{
   filter: brightness(.9);
@@ -616,12 +614,16 @@ form input[type="submit"]:hover {
 .tabs {
   width: 100% !important; 
   position: relative;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 
-  flex-wrap: nowrap;
   /* flex-direction: column !important; */
 }
 .tabs h3 {
-  line-height: 1;
+  font-size: 14px;
+  padding: 6px 8px;
+  line-height: 1.2;
 }
 
 #tab-content-container {
@@ -642,14 +644,6 @@ form input[type="submit"]:hover {
 }
 }
 
-/* Responsive designs */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -660,7 +654,7 @@ form input[type="submit"]:hover {
     height: auto;
     position: relative;
     width: 100%;
-    overflow: auto;
+    /* overflow: auto; */
   }
   .pri-container {
     position: relative !important;
