@@ -765,3 +765,70 @@ form input[type="submit"]:hover {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {
 } */
+
+
+
+/* lightbox*/
+
+.clear:after,
+.clear:before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.gallery {
+    display: block;
+}
+
+.gallery a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    overflow: hidden;
+    outline: none;
+}
+
+.gallery a img {
+
+    transform: scale(1, 1);
+    transition: all 300ms ease;
+}
+
+.gallery a img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+.bg {
+  z-index: 999;
+    width: 250px;
+    height: 130px;
+    background-size: cover;
+    transform: scale(1, 1);
+    transition: all 300ms ease;
+}
+
+.bg:hover {
+    transform: scale(1.1, 1.1);
+}
+
+@media(max-width: 991px) {
+
+    .gallery a {
+        width: 50%;
+    }
+
+}
+
+/* @media(max-width: 767px) {
+
+    .gallery a {
+        width: 100%;
+    }
+
+    .bg {
+        height: 300px;
+    }
+
+} */

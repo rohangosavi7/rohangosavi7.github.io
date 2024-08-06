@@ -48,3 +48,87 @@ document.getElementById("myForm").onsubmit = function (event) {
         });
 };
 
+
+
+let projects = [
+    {
+        name: "The Dog Spot",
+        domain: "Web Development",
+        img:"The Dog Spot",
+        src:"assets/images/The dog spot.png"
+    },
+    {
+        name: "Golf Club clone",
+        domain: "Web Design",
+        img:"Golf Club clone",
+        src:"assets/images/The dog spot.png"
+    },
+    {
+        name: "Golf Club clone",
+        domain: "Web Design",
+        img:"Golf Club clone",
+        src:"assets/images/The dog spot.png"
+    },
+    {
+        name: "Golf Club clone",
+        domain: "Web Design",
+        img:"Golf Club clone",
+        src:"assets/images/The dog spot.png"
+    },
+    {
+        name: "Golf Club clone",
+        domain: "Web Design",
+        img:"Golf Club clone",
+        src:"assets/images/The dog spot.png"
+    }
+    
+];
+
+
+const projectsContainer = portfolio.querySelector("#tab-content-container");
+console.log(projectsContainer);
+
+for (let index = 0; index < projects.length; index++){
+    const element = projects[index];
+    console.log(index)
+    //pass the project name
+
+    let projectCard = `<div class="tab-content-card">
+                  <img src='${projects[index].src}' alt="" />
+                  <h4>${projects[index].name}</h4>
+                  <p>${projects[index].domain} </p>
+                </div>`
+
+    projectsContainer.insertAdjacentHTML("beforeend", projectCard);
+
+
+
+} //for loop end
+
+
+
+
+
+
+    var galleryLinks = document.querySelectorAll('.gallery a');
+
+    galleryLinks.forEach(function (link) {
+        var bgElement = link.querySelector('.bg');
+        var bgImage = window.getComputedStyle(bgElement).backgroundImage;
+        console.log(bgImage);
+        var imageUrl = bgImage.replace(/(url\(|\)|")/g, '');
+        link.href = imageUrl;
+    });
+
+    Fancybox.bind("[data-fancybox]", {
+        loop: true,
+        buttons: [
+            "zoom",
+            "share",
+            "slideShow",
+            "fullScreen",
+            "download",
+            "thumbs",
+            "close"
+        ]
+    });
