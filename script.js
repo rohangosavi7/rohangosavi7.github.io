@@ -146,3 +146,18 @@ tl.from(".header", {
     ease: "sine.inOut",
     autoAlpha: 0,
 })
+
+
+
+let navMobile = document.querySelector('.nav-links-mobile');
+let menuBtn = document.querySelector('.menu-btn');
+let navLink = document.querySelectorAll('.nav-link');
+
+function toggleMenu(){
+    console.log(navMobile.classList);
+    navMobile.classList.toggle('active');
+}
+
+function clickPage(){
+    navMobile.classList.remove('active');
+}
