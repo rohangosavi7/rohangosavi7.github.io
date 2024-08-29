@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1D1D1D" />
   <meta name="description"
-    content="Leading web design and development agency specializing in creating stunning, user-friendly websites for businesses. Contact us today for a custom solution!" />
+    content="" />
   <meta name="robots" content="index, follow" />
   <!-- <link rel="canonical" href="https://webifyx.in" /> -->
 
@@ -38,8 +38,14 @@
 </head>
 
 <body>
+  <div class="c-cursor js-cursor">
+    <div class="c-cursor__inner c-cursor__inner--circle js-cursor-inner">
+      <div class="c-cursor__side c-cursor__side--left js-cursor-right"></div>
+      <div class="c-cursor__side c-cursor__side--right js-cursor-left"></div>
+    </div>
+  </div>
 
-  <!-- Preloader -->
+  <!-- Preloader
     <div class="preloader">
       <div class='wrapper'>
        <div class='text'></div>
@@ -47,10 +53,13 @@
        <div class="pr-progress"></div>
        </div>
       </div>
-     </div>
+     </div> -->
 
 
   <main class="main">
+    <video autoplay muted loop id="myVideo">
+      <source src="/assets/bgVideo.mov" type="video/mp4">
+    </video>
     <!-- Left side -->
     <header class="header d-flex align-items-center gap-2">
 
@@ -127,14 +136,15 @@
     <!-- Right div -->
 
     <div class="main-div">
+
       <!-- page1 -->
       <div class="page active page1 d-flex flex-column" id="home">
         <div class="page1-innerChild1">
-          <img class="" src="assets/images/Hero image.png" alt="" />
+          <img class="portfolio-image" src="assets/images/Hero image.png" alt="" />
           <h1 class="">Hi!</h1>
           <h1>I'm Rohan Gosavi</h1>
           <h4>UI/UX designer and Frontend Developer</h4>
-          <a href="#work">View Portfolio </a>
+          <a class="hero-btn" href="#work">View Portfolio </a>
         </div>
 
         <!-- <div class="page1-innerChild2">
@@ -163,7 +173,8 @@
           and easy to use.
         </p>
 
-        <div class="cards d-flex gap-4">
+        <div class="cards d-flex gap-4 scroller"  data-direction="left" data-speed="fast">
+          <div class="scroller__inner">
           <div class="card" id="card1">
             <img src="/assets/images/icons8-web-design-64.png" alt="" />
             <p>Web Design</p>
@@ -180,12 +191,13 @@
             <img src="/assets/images/icons8-marketing-100.png" alt="" />
             <p>Branding & Marketing</p>
           </div>
+          
+        </div>
         </div>
 
         <div class="call-to-action">
           <h3>I am happy to know you</h3>
           <h3>that 300+ projects done sucessfully!</h3>
-
           <a href="#contact">Hire me</a>
         </div>
       </div>
@@ -203,8 +215,7 @@
 
             <h3>Website Design</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-              odit et molestias neque
+              Crafting visually stunning and user-friendly websites that capture your brand's essence.
             </p>
           </div>
 
@@ -215,8 +226,7 @@
             <h3>UI/UX Design</h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-              odit et molestias neque
+              Enhancing user experiences with intuitive and engaging designs tailored to your audience.
             </p>
           </div>
 
@@ -227,8 +237,7 @@
             <h3>Website development</h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-              odit et molestias neque
+              Building robust and responsive websites that deliver seamless performance across all devices.
             </p>
           </div>
 
@@ -239,32 +248,29 @@
             <h3>Wordpress</h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-              odit et molestias neque
+              Creating custom WordPress solutions that are easy to manage and scalable to your needs.
             </p>
           </div>
 
-          <div class="card container align-items-center justify-content-end" id="card4">
+          <div class="card container align-items-center justify-content-end" id="card5">
             <div class="hexagon hexagon-5">
               <img src="/assets/images/icons8-web-design-64.png" alt="" />
             </div>
             <h3>Shopify</h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-              odit et molestias neque
+              Setting up and optimizing your Shopify store to maximize sales and streamline your e-commerce business.
             </p>
           </div>
 
-          <div class="card container align-items-center justify-content-end" id="card4">
+          <div class="card container align-items-center justify-content-end" id="card6">
             <div class="hexagon hexagon-6">
               <img src="/assets/images/icons8-web-design-64.png" alt="" />
             </div>
             <h3>Social Media Marekting</h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-              odit et molestias neque
+              Driving engagement & growth through strategic social campaigns that resonate with your audience.
             </p>
           </div>
         </div>
@@ -479,108 +485,111 @@
           </div>
         </div>
 
-        <!-- page6 -->
-        <div class="page page6 d-flex py-5 justify-content-start flex-column flex-wrap" id="contact">
-          <p id="sec-heading">Get in touch</p>
-          <h4 id="primary-heading">CONTACT</h4>
 
-          <div class="container-fluid contact-box mt-5 d-flex justify-content-between">
-            <div class="col-md-5">
-              <div class="row">
-                <div class="contact-card mb-3" style="max-width: 350px">
-                  <div class="row no-gutters gap-2">
-                    <div class="contact-icon-box col d-flex align-items-center justify-content-center">
-                      <img id="contact-icon"
-                        src="https://img.icons8.com/?size=100&id=okvpqeYbG0xb&format=png&color=2C98F0" class="card-img"
-                        alt="..." />
-                    </div>
-                    <div class="col-md-8 d-flex align-items-center">
-                      <div class="card-body">
-                        <h5 class="card-title">
-                          <a href="mailto:work.rohangosavi@gmail.com">work.rohangosavi@gmail.com</a>
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="contact-card mb-3" style="max-width: 340px">
-                  <div class="row no-gutters gap-2">
-                    <div class="contact-icon-box col d-flex align-items-center justify-content-center">
-                      <img id="contact-icon"
-                        src="https://img.icons8.com/?size=100&id=46SSz0tLEkrY&format=png&color=2C98F0" class="card-img"
-                        alt="..." />
-                    </div>
-                    <div class="col-md-8 d-flex align-items-center">
-                      <div class="card-body">
-                        <h5 class="card-title">
-                          <a href="#">Pune, Maharastra, India</a>
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="contact-card mb-3" style="max-width: 340px">
-                  <div class="row no-gutters gap-2">
-                    <div class="contact-icon-box col d-flex align-items-center justify-content-center">
-                      <img id="contact-icon" src="https://img.icons8.com/?size=100&id=53438&format=png&color=2C98F0"
-                        class="card-img" alt="..." />
-                    </div>
-                    <div class="col-md-8 d-flex align-items-center">
-                      <div class="card-body">
-                        <h5 class="card-title" id="tel">
-                          <a href="tel:+918999865294">+91 89 99 86 52 94</a>
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-5 ms-auto">
-              <div class="col">
-                <div class="row">
-                  <div class="form-div col-md-10 col-md-offset-1 col-md-pull-1 animate-box fadeInRight animated"
-                    data-animate-effect="fadeInRight">
-                    <form action="https://api.web3forms.com/submit" method="POST" onsubmit="displayConfirm()" id="form">
-                      <!-- Replace with your Access Key -->
-                      <input type="hidden" name="access_key" value="c85cc405-7e1f-43f3-8ab3-6014c892bdba" />
-
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name" name="name" required />
-                      </div>
-                      <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email" name="email" required />
-                      </div>
-
-
-                      <div class="form-group">
-                        <textarea id="message" cols="30" rows="7" class="form-control" placeholder="Your Message"
-                          name="message"></textarea>
-                      </div>
-
-                      <!-- Honeypot Spam Protection -->
-                      <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
-
-                      <!-- Custom Confirmation / Success Page -->
-
-
-                      <div class="form-group">
-                        <input type="submit" class="btn btn-primary btn-send-message" value="Send Message" />
-
-
-                      </div>
-                      <div id="result"></div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
+
+              <!-- page6 -->
+              <div class="page page6 d-flex py-5 justify-content-start flex-column flex-wrap" id="contact">
+                <p id="sec-heading">Get in touch</p>
+                <h4 id="primary-heading">CONTACT</h4>
+      
+                <div class="container-fluid contact-box mt-5 d-flex justify-content-between">
+                  <div class="col-md-5">
+                    <div class="row">
+                      <div class="contact-card mb-3" style="max-width: 350px">
+                        <div class="row no-gutters gap-2">
+                          <div class="contact-icon-box col d-flex align-items-center justify-content-center">
+                            <img id="contact-icon"
+                              src="https://img.icons8.com/?size=100&id=okvpqeYbG0xb&format=png&color=2C98F0" class="card-img"
+                              alt="..." />
+                          </div>
+                          <div class="col-md-8 d-flex align-items-center">
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="mailto:work.rohangosavi@gmail.com">work.rohangosavi@gmail.com</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="contact-card mb-3" style="max-width: 340px">
+                        <div class="row no-gutters gap-2">
+                          <div class="contact-icon-box col d-flex align-items-center justify-content-center">
+                            <img id="contact-icon"
+                              src="https://img.icons8.com/?size=100&id=46SSz0tLEkrY&format=png&color=2C98F0" class="card-img"
+                              alt="..." />
+                          </div>
+                          <div class="col-md-8 d-flex align-items-center">
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <a href="#">Pune, Maharastra, India</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="contact-card mb-3" style="max-width: 340px">
+                        <div class="row no-gutters gap-2">
+                          <div class="contact-icon-box col d-flex align-items-center justify-content-center">
+                            <img id="contact-icon" src="https://img.icons8.com/?size=100&id=53438&format=png&color=2C98F0"
+                              class="card-img" alt="..." />
+                          </div>
+                          <div class="col-md-8 d-flex align-items-center">
+                            <div class="card-body">
+                              <h5 class="card-title" id="tel">
+                                <a href="tel:+918999865294">+91 89 99 86 52 94</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-5 ms-auto">
+                    <div class="col">
+                      <div class="row">
+                        <div class="form-div col-md-10 col-md-offset-1 col-md-pull-1 animate-box fadeInRight animated"
+                          data-animate-effect="fadeInRight">
+                          <form action="https://api.web3forms.com/submit" method="POST" onsubmit="displayConfirm()" id="form">
+                            <!-- Replace with your Access Key -->
+                            <input type="hidden" name="access_key" value="c85cc405-7e1f-43f3-8ab3-6014c892bdba" />
+      
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Name" name="name" required />
+                            </div>
+                            <div class="form-group">
+                              <input type="email" class="form-control" placeholder="Email" name="email" required />
+                            </div>
+      
+      
+                            <div class="form-group">
+                              <textarea id="message" cols="30" rows="7" class="form-control" placeholder="Your Message"
+                                name="message"></textarea>
+                            </div>
+      
+                            <!-- Honeypot Spam Protection -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
+      
+                            <!-- Custom Confirmation / Success Page -->
+      
+      
+                            <div class="form-group">
+                              <input type="submit" class="btn btn-primary btn-send-message" value="Send Message" />
+      
+      
+                            </div>
+                            <div id="result"></div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
     </div>
   </main>
 
@@ -602,6 +611,9 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"
     integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw=="
