@@ -1121,7 +1121,7 @@ nav button img {
 }
 
 .page1 {
-  height: 100vh !important;
+  height: 80vh !important;
   padding-top: 4rem;
   position: relative;
   padding-bottom: 20px;
@@ -1162,8 +1162,9 @@ nav button img {
 }
 .page1 .page1-innerChild1 img {
   position: absolute;
-  height: 280px;
-  bottom: 10rem;
+  left: 10vw;
+  height: 400px;
+  bottom: 0;
   z-index: -1;
 }
 .page1 .page1-innerChild2 {
@@ -1354,7 +1355,52 @@ flex-wrap: nowrap !important;
   letter-spacing: 2px;
 }
 
+.page5{
+  height: auto !important;
+}
+.contact-box{
+  margin: 0 !important;
+}
 
+#contact-icon{
+  width: 16px ;
+
+ }
+ .contact-icon-box{
+  background-color: #F2F3F7;
+  height: 40px !important;
+  max-width: 40px !important;
+ }
+ .card-title a{
+  font-family: "Quicksand", Arial, sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.7);
+ }
+ .card-title a:hover{
+  color:#2c98f0;
+ }
+
+ /* #tel{
+  letter-spacing: 3px;
+ } */
+
+ .page6{
+  height:auto !important;
+ }
+
+ .contact-box{
+  position: relative;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column;
+ }
+ .contact-form-cont{
+  margin: 0 !important;
+  padding-top: 20px;
+ }
 }
 
 

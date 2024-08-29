@@ -83,67 +83,67 @@ function displayConfirm() {
 
 // // preloader
 
-// let randomStop = Math.random() * (0.8 - 0.3) + 0.3;
+let randomStop = Math.random() * (0.8 - 0.3) + 0.3;
 
 let tl = gsap.timeline();
 
-// tl.to(".text", {
-//     duration: 2,
-//     text: "Rohan Gosavi"
-// })
-//     .from(".pr-progress-bar", {
-//         duration: 0.5,
-//         opacity: 0
-//     })
-//     .to(".pr-progress", {
-//         duration: 1,
-//         width: `${randomStop * 50}%`
-//     })
-//     .to(".pr-progress", {
-//         duration: 1 - randomStop,
-//         width: "100%"
-//     })
-//     .to(".text, .pr-progress-bar", {
-//         duration: 0.5,
-//         opacity: 0
-//     })
-//     .to(".pr-preloader", {
-//         duration: 0.5,
-//         height: 0,
-//         onComplete: () => {
-//             gsap.to(document.querySelector(".preloader"), { x: 200 });
-//             document.querySelector(".preloader").style.display = "none";
-//         }
-//     });
+tl.to(".text", {
+    duration: 2,
+    text: "Rohan Gosavi"
+})
+    .from(".pr-progress-bar", {
+        duration: 0.5,
+        opacity: 0
+    })
+    .to(".pr-progress", {
+        duration: 1,
+        width: `${randomStop * 50}%`
+    })
+    .to(".pr-progress", {
+        duration: 1 - randomStop,
+        width: "100%"
+    })
+    .to(".text, .pr-progress-bar", {
+        duration: 0.5,
+        opacity: 0
+    })
+    .to(".pr-preloader", {
+        duration: 0.5,
+        height: 0,
+        onComplete: () => {
+            gsap.to(document.querySelector(".preloader"), { x: 200 });
+            document.querySelector(".preloader").style.display = "none";
+        }
+    });
 
 // //list as many as you'd like
 gsap.registerPlugin(ScrollTrigger);
 
 
-// const page = document.querySelectorAll(".page");
+const page = document.querySelectorAll(".page");
 
-// page.forEach((element) => {
-//     gsap.from(element, {
-//         opacity:0,
-//         x: 100,
-//         delay: 6,
-//         duration: 2,
-//         ease: "sine.inOut",
-//         autoAlpha: 0,
-//         scrollTrigger: {
-//             trigger: element
-//         }
-//     });
-// })
+page.forEach((element) => {
+    gsap.from(element, {
+        opacity:0,
+        x: 100,
+        delay: 6,
+        duration: 2,
+        ease: "sine.inOut",
+        autoAlpha: 0,
+        scrollTrigger: {
+            trigger: element
+        }
+    });
+})
 
-// tl.from(".header", {
-//     opacity:0,
-//     x: -100,
-//     delay: 0.5,
-//     duration: 2,
-//     ease: "sine.inOut",
-//     autoAlpha: 0,
-// })
+tl.from(".header", {
+    opacity:0,
+    x: -100,
+    delay: 0.5,
+    duration: 2,
+    ease: "sine.inOut",
+    autoAlpha: 0,
+})
 
 
 let navMobile = document.querySelector('.nav-links-mobile');
