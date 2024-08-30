@@ -9,8 +9,7 @@
   <meta name="keywords" content="web design, web development, agency, custom websites" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1D1D1D" />
-  <meta name="description"
-    content="" />
+  <meta name="description" content="" />
   <meta name="robots" content="index, follow" />
   <!-- <link rel="canonical" href="https://webifyx.in" /> -->
 
@@ -19,13 +18,9 @@
 
   <!-- STyles -->
   <link rel="stylesheet" href="assets/style.css" />
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,6 +33,12 @@
 </head>
 
 <body>
+
+  <div class="banner">
+    <canvas id="dotsCanvas"></canvas>
+  </div>
+
+
   <div class="c-cursor js-cursor">
     <div class="c-cursor__inner c-cursor__inner--circle js-cursor-inner">
       <div class="c-cursor__side c-cursor__side--left js-cursor-right"></div>
@@ -45,24 +46,20 @@
     </div>
   </div>
 
-    <div class="preloader">
-      <div class='wrapper'>
-       <div class='text'></div>
-       <div class="pr-progress-bar">
-       <div class="pr-progress"></div>
-       </div>
+  <div class="preloader">
+    <div class='wrapper'>
+      <div class='text'></div>
+      <div class="pr-progress-bar">
+        <div class="pr-progress"></div>
       </div>
-     </div>
+    </div>
+  </div>
 
 
   <main class="main">
-    <video autoplay muted loop id="myVideo">
-      <source src="/assets/bgVideo.mov" type="video/mp4">
-    </video>
+
     <!-- Left side -->
     <header class="header d-flex align-items-center gap-2">
-
-
       <div class="logo d-flex flex-column gap-3 justify-content-center align-items-center">
         <img class="hero-img" src="/assets/images/profile-pic (4).png" alt="" />
         <h2>Rohan Gosavi</h2>
@@ -73,9 +70,9 @@
 
 
       <nav>
+        <button id="menu-btn" onclick="toggleMenu()"><img
+            src="https://img.icons8.com/?size=100&id=84026&format=png&color=2c98f0" alt=""></button>
 
-        <button id="menu-btn"  onclick="toggleMenu()" ><img src="https://img.icons8.com/?size=100&id=84026&format=png&color=2c98f0" alt=""></button>
-        
         <div class="nav-links " id="">
           <ul>
             <li>
@@ -172,26 +169,26 @@
           and easy to use.
         </p>
 
-        <div class="cards d-flex gap-4 scroller"  data-direction="left" data-speed="fast">
+        <div class="cards d-flex gap-4 scroller" data-direction="left" data-speed="fast">
           <div class="scroller__inner">
-          <div class="card" id="card1">
-            <img src="/assets/images/icons8-web-design-64.png" alt="" />
-            <p>Web Design</p>
+            <div class="card" id="card1">
+              <img src="/assets/images/icons8-web-design-64.png" alt="" />
+              <p>Web Design</p>
+            </div>
+            <div class="card" id="card2">
+              <img src="/assets/images/icons8-windows-10-personalization-100.png" alt="" />
+              <p>UI/UX Design</p>
+            </div>
+            <div class="card" id="card3">
+              <img src="/assets/images/icons8-shopping-bag-100.png" alt="" />
+              <p>Wordpress & Shopify</p>
+            </div>
+            <div class="card" id="card4">
+              <img src="/assets/images/icons8-marketing-100.png" alt="" />
+              <p>Branding & Marketing</p>
+            </div>
+
           </div>
-          <div class="card" id="card2">
-            <img src="/assets/images/icons8-windows-10-personalization-100.png" alt="" />
-            <p>UI/UX Design</p>
-          </div>
-          <div class="card" id="card3">
-            <img src="/assets/images/icons8-shopping-bag-100.png" alt="" />
-            <p>Wordpress & Shopify</p>
-          </div>
-          <div class="card" id="card4">
-            <img src="/assets/images/icons8-marketing-100.png" alt="" />
-            <p>Branding & Marketing</p>
-          </div>
-          
-        </div>
         </div>
 
         <div class="call-to-action">
@@ -487,111 +484,113 @@
 
       </div>
 
-              <!-- page6 -->
-              <div class="page page6 d-flex py-5 justify-content-start flex-column flex-wrap" id="contact">
-                <p id="sec-heading">Get in touch</p>
-                <h4 id="primary-heading">CONTACT</h4>
-      
-                <div class="container-fluid contact-box mt-5 d-flex justify-content-between">
-                  <div class="col-md-5">
-                    <div class="row">
-                      <div class="contact-card mb-3" style="max-width: 350px">
-                        <div class="row no-gutters gap-2">
-                          <div class="contact-icon-box col d-flex align-items-center justify-content-center">
-                            <img id="contact-icon"
-                              src="https://img.icons8.com/?size=100&id=okvpqeYbG0xb&format=png&color=2C98F0" class="card-img"
-                              alt="..." />
-                          </div>
-                          <div class="col-md-8 d-flex align-items-center">
-                            <div class="card-body">
-                              <h5 class="card-title">
-                                <a href="mailto:work.rohangosavi@gmail.com">work.rohangosavi@gmail.com</a>
-                              </h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-      
-                      <div class="contact-card mb-3" style="max-width: 340px">
-                        <div class="row no-gutters gap-2">
-                          <div class="contact-icon-box col d-flex align-items-center justify-content-center">
-                            <img id="contact-icon"
-                              src="https://img.icons8.com/?size=100&id=46SSz0tLEkrY&format=png&color=2C98F0" class="card-img"
-                              alt="..." />
-                          </div>
-                          <div class="col-md-8 d-flex align-items-center">
-                            <div class="card-body">
-                              <h5 class="card-title">
-                                <a href="#">Pune, Maharastra, India</a>
-                              </h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-      
-                      <div class="contact-card mb-3" style="max-width: 340px">
-                        <div class="row no-gutters gap-2">
-                          <div class="contact-icon-box col d-flex align-items-center justify-content-center">
-                            <img id="contact-icon" src="https://img.icons8.com/?size=100&id=53438&format=png&color=2C98F0"
-                              class="card-img" alt="..." />
-                          </div>
-                          <div class="col-md-8 d-flex align-items-center">
-                            <div class="card-body">
-                              <h5 class="card-title" id="tel">
-                                <a href="tel:+918999865294">+91 89 99 86 52 94</a>
-                              </h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+      <!-- page6 -->
+      <div class="page page6 d-flex py-5 justify-content-start flex-column flex-wrap" id="contact">
+        <p id="sec-heading">Get in touch</p>
+        <h4 id="primary-heading">CONTACT</h4>
+
+        <div class="container-fluid contact-box mt-5 d-flex justify-content-between">
+          <div class="col-md-5">
+            <div class="row">
+              <div class="contact-card mb-3" style="max-width: 350px">
+                <div class="row no-gutters gap-2">
+                  <div class="contact-icon-box col d-flex align-items-center justify-content-center">
+                    <img id="contact-icon"
+                      src="https://img.icons8.com/?size=100&id=okvpqeYbG0xb&format=png&color=2C98F0" class="card-img"
+                      alt="..." />
                   </div>
-      
-                  <div class="col-md-5 contact-form-cont">
-                    <div class="col">
-                      <div class="row">
-                        <div class="form-div col-md-10 col-md-offset-1 col-md-pull-1 animate-box fadeInRight animated"
-                          data-animate-effect="fadeInRight">
-                          <form action="https://api.web3forms.com/submit" method="POST" onsubmit="displayConfirm()" id="form">
-                            <!-- Replace with your Access Key -->
-                            <input type="hidden" name="access_key" value="c85cc405-7e1f-43f3-8ab3-6014c892bdba" />
-      
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Name" name="name" required />
-                            </div>
-                            <div class="form-group">
-                              <input type="email" class="form-control" placeholder="Email" name="email" required />
-                            </div>
-      
-      
-                            <div class="form-group">
-                              <textarea id="message" cols="30" rows="7" class="form-control" placeholder="Your Message"
-                                name="message"></textarea>
-                            </div>
-      
-                            <!-- Honeypot Spam Protection -->
-                            <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
-      
-                            <!-- Custom Confirmation / Success Page -->
-      
-      
-                            <div class="form-group">
-                              <input type="submit" class="btn btn-primary btn-send-message" value="Send Message" />
-      
-      
-                            </div>
-                            <div id="result"></div>
-                          </form>
-                        </div>
-                      </div>
+                  <div class="col-md-8 d-flex align-items-center">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="mailto:work.rohangosavi@gmail.com">work.rohangosavi@gmail.com</a>
+                      </h5>
                     </div>
                   </div>
                 </div>
               </div>
 
+              <div class="contact-card mb-3" style="max-width: 340px">
+                <div class="row no-gutters gap-2">
+                  <div class="contact-icon-box col d-flex align-items-center justify-content-center">
+                    <img id="contact-icon"
+                      src="https://img.icons8.com/?size=100&id=46SSz0tLEkrY&format=png&color=2C98F0" class="card-img"
+                      alt="..." />
+                  </div>
+                  <div class="col-md-8 d-flex align-items-center">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#">Pune, Maharastra, India</a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-card mb-3" style="max-width: 340px">
+                <div class="row no-gutters gap-2">
+                  <div class="contact-icon-box col d-flex align-items-center justify-content-center">
+                    <img id="contact-icon" src="https://img.icons8.com/?size=100&id=53438&format=png&color=2C98F0"
+                      class="card-img" alt="..." />
+                  </div>
+                  <div class="col-md-8 d-flex align-items-center">
+                    <div class="card-body">
+                      <h5 class="card-title" id="tel">
+                        <a href="tel:+918999865294">+91 89 99 86 52 94</a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 contact-form-cont">
+            <div class="col">
+              <div class="row">
+                <div class="form-div col-md-10 col-md-offset-1 col-md-pull-1 animate-box fadeInRight animated"
+                  data-animate-effect="fadeInRight">
+                  <form action="https://api.web3forms.com/submit" method="POST" onsubmit="displayConfirm()" id="form">
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="c85cc405-7e1f-43f3-8ab3-6014c892bdba" />
+
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email" name="email" required />
+                    </div>
+
+
+                    <div class="form-group">
+                      <textarea id="message" cols="30" rows="7" class="form-control" placeholder="Your Message"
+                        name="message"></textarea>
+                    </div>
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
+
+                    <!-- Custom Confirmation / Success Page -->
+
+
+                    <div class="form-group">
+                      <input type="submit" class="btn btn-primary btn-send-message" value="Send Message" />
+
+
+                    </div>
+                    <div id="result"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
   </main>
 
+<!-- 
   <div id="contact-confirm" class="contact-confirm hidden">
     <img src="https://img.icons8.com/?size=100&id=tyk8jzZDn7y7&format=png&color=2C98F0" alt="" />
     <h1 id="primary-heading">Form submitted successfully!</h1>
@@ -600,18 +599,18 @@
       to you soon!
     </p>
     <a href="http://127.0.0.1:5500/Index.html">Confirm</a>
-  </div>
+  </div> -->
 
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
     integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+ 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    
+
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"
