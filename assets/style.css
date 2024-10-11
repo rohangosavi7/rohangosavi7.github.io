@@ -119,6 +119,13 @@ body {
   position: fixed;
 
 }
+.banner video{
+  filter: contrast(1.8);
+  opacity: .4;
+  width: 100% !important;
+  height: 100% !important;
+  animation: fade 4s ease 4.5s 1;
+}
 
 .banner #dotsCanvas{
   opacity: .15;
