@@ -1,631 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Rohan Gosavi</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rohan Gosavi Portfolio</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-  <meta name="keywords" content="web design, web development, agency, custom websites" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#1D1D1D" />
-  <meta name="description" content="" />
-  <meta name="robots" content="index, follow" />
-  <!-- <link rel="canonical" href="https://webifyx.in" /> -->
+    <!-- vendor css files -->
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-  <!-- STyles -->
-  <link rel="stylesheet" href="assets/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- vendor js files -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+    <!-- Add Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet" />
-</head>
+    <!-- Add Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-<body>
+    <!-- Add Devicon for tech stack icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
 
-  <div class="banner">
-    <video  autoplay muted loop>
-      <source src="/assets/bgVideo.mov" type="video/mp4">
-    </video>
-    <!-- <canvas id="dotsCanvas"></canvas> -->
-  </div> 
-  
+  <body>
+    <div class="main align-items-center justify-content-center gap-4">
+      <div class="main-col1 pri-container">
 
-
-  <div class="c-cursor js-cursor">
-    <div class="c-cursor__inner c-cursor__inner--circle js-cursor-inner">
-      <div class="c-cursor__side c-cursor__side--left js-cursor-right"></div>
-      <div class="c-cursor__side c-cursor__side--right js-cursor-left"></div>
-    </div>
-  </div>
-
-  <div class="preloader">
-    <div class='wrapper'>
-      <div class='text'></div>
-      <div class="pr-progress-bar">
-        <div class="pr-progress"></div>
-      </div>
-    </div>
-  </div>
-
-
-  <main class="main">
-
-    <!-- Left side -->
-    <header class="header d-flex align-items-center gap-2">
-      <div class="logo d-flex flex-column gap-3 justify-content-center align-items-center">
-        <img class="hero-img" src="/assets/images/profile-pic (4).png" alt="" />
-        <h2>Rohan Gosavi</h2>
-        <h4>UI/UX and frontend Developer</h4>
-      </div>
-
-      <!-- navigation -->
-
-
-      <nav>
-        <button id="menu-btn" onclick="toggleMenu()"><img
-            src="https://img.icons8.com/?size=100&id=84026&format=png&color=2c98f0" alt=""></button>
-
-        <div class="nav-links " id="">
-          <ul>
-            <li>
-              <a href="#home" class="nav-link" data-page="home">Home</a>
-            </li>
-            <li>
-              <a href="#about" class="nav-link" data-page="about">About</a>
-            </li>
-            <li>
-              <a href="#services" class="nav-link" data-page="services">Services</a>
-            </li>
-            <!-- <li>
-                <a href="#experience" class="nav-link" data-page="experience"
-                  >experience</a
-                >
-              </li> -->
-            <li>
-              <a href="#work" class="nav-link" data-page="work">work</a>
-            </li>
-            <li>
-              <a href="#contact" class="nav-link" data-page="contact">Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class=" nav-links-mobile inactive">
-          <ul>
-            <li>
-              <a href="#home" class="nav-link" onclick="clickPage()" data-page="home">Home</a>
-            </li>
-            <li>
-              <a href="#about" class="nav-link" onclick="clickPage()" data-page="about">About</a>
-            </li>
-            <li>
-              <a href="#services" class="nav-link" onclick="clickPage()" data-page="services">Services</a>
-            </li>
-            <!-- <li>
-                <a href="#experience" class="nav-link" data-page="experience"
-                  >experience</a
-                >
-              </li> -->
-            <li>
-              <a href="#work" class="nav-link" onclick="clickPage()" data-page="work">work</a>
-            </li>
-            <li>
-              <a href="#contact" class="nav-link" onclick="clickPage()" data-page="contact">Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-
-
-      </nav>
-    </header>
-
-    <!-- Right div -->
-
-    <div class="main-div">
-
-      <!-- page1 -->
-      <div class="page active page1 d-flex flex-column" id="home">
-        <div class="page1-innerChild1">
-          <img class="portfolio-image" src="assets/images/Hero image.png" alt="" />
-          <h1 class="">Hi!</h1>
-          <h1>I'm Rohan Gosavi</h1>
-          <h4>UI/UX designer and Frontend Developer</h4>
-          <a class="hero-btn" href="#work">View Portfolio </a>
-        </div>
-
-        <!-- <div class="page1-innerChild2">
-            <h1>Hi!</h1>
-            <h1>I'm Rohan Gosavi</h1>
-            <h4>UI/UX designer and Frontend Developer</h4>
-            <a href="#">View Portfolio </a>
-          </div> -->
-      </div>
-
-      <!-- page2 -->
-      <div class="page page2 d-flex justify-content-center flex-column" id="about">
-        <p id="sec-heading">About me</p>
-        <h4 id="primary-heading">WHO AM I?</h4>
-        <p id="tertary-heading">
-          <span>Hi I'm Rohan Gosavi.</span> I am a motivated and adaptable
-          individual, consistently seeking out new challenges to fuel my
-          growth. Infused with a positive attitude and a commitment to
-          continuous learning, I'm poised to create a significant impact and
-          accomplish remarkable feats.
-        </p>
-        <p>
-          My job is to build your website so that it is functional and
-          user-friendly but at the same time attractive. Moreover, I add
-          personal touch to your product and make sure that is eye-catching
-          and easy to use.
-        </p>
-
-        <div class="cards d-flex gap-4 scroller" data-direction="left" data-speed="fast">
-          <div class="scroller__inner">
-            <div class="card" id="card1">
-              <img src="/assets/images/icons8-web-design-64.png" alt="" />
-              <p>Web Design</p>
-            </div>
-            <div class="card" id="card2">
-              <img src="/assets/images/icons8-windows-10-personalization-100.png" alt="" />
-              <p>UI/UX Design</p>
-            </div>
-            <div class="card" id="card3">
-              <img src="/assets/images/icons8-shopping-bag-100.png" alt="" />
-              <p>Wordpress & Shopify</p>
-            </div>
-            <div class="card" id="card4">
-              <img src="/assets/images/icons8-marketing-100.png" alt="" />
-              <p>Branding & Marketing</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="call-to-action">
-          <h3>I am happy to know you</h3>
-          <h3>that 300+ projects done sucessfully!</h3>
-          <a href="#contact">Hire me</a>
-        </div>
-      </div>
-
-      <!-- page3 -->
-      <div class="page page3 d-flex py-5 justify-content-start flex-column" id="services">
-        <p id="sec-heading">What i do?</p>
-        <h4 id="primary-heading">Here are some of my expertise</h4>
-
-        <div class="services-cards d-flex flex-wrap gap-4">
-          <div class="card container d-flex align-items-center justify-content-end" id="card1">
-            <div class="hexagon hexagon-1">
-              <img src="https://img.icons8.com/?size=100&id=24870&format=png&color=ffffff" alt="" />
-            </div>
-
-            <h3>Website Design</h3>
-            <p>
-              Crafting visually stunning and user-friendly websites that capture your brand's essence.
-            </p>
-          </div>
-
-          <div class="card container align-items-center justify-content-end" id="card2">
-            <div class="hexagon hexagon-2">
-              <img src="/assets/images/icons8-web-design-64.png" alt="" />
-            </div>
-            <h3>UI/UX Design</h3>
-
-            <p>
-              Enhancing user experiences with intuitive and engaging designs tailored to your audience.
-            </p>
-          </div>
-
-          <div class="card container align-items-center justify-content-end" id="card3">
-            <div class="hexagon hexagon-3">
-              <img src="/assets/images/icons8-web-design-64.png" alt="" />
-            </div>
-            <h3>Website development</h3>
-
-            <p>
-              Building robust and responsive websites that deliver seamless performance across all devices.
-            </p>
-          </div>
-
-          <div class="card container align-items-center justify-content-end" id="card4">
-            <div class="hexagon hexagon-4">
-              <img src="/assets/images/icons8-web-design-64.png" alt="" />
-            </div>
-            <h3>Wordpress</h3>
-
-            <p>
-              Creating custom WordPress solutions that are easy to manage and scalable to your needs.
-            </p>
-          </div>
-
-          <div class="card container align-items-center justify-content-end" id="card5">
-            <div class="hexagon hexagon-5">
-              <img src="/assets/images/icons8-web-design-64.png" alt="" />
-            </div>
-            <h3>Shopify</h3>
-
-            <p>
-              Setting up and optimizing your Shopify store to maximize sales and streamline your e-commerce business.
-            </p>
-          </div>
-
-          <div class="card container align-items-center justify-content-end" id="card6">
-            <div class="hexagon hexagon-6">
-              <img src="/assets/images/icons8-web-design-64.png" alt="" />
-            </div>
-            <h3>Social Media Marekting</h3>
-
-            <p>
-              Driving engagement & growth through strategic social campaigns that resonate with your audience.
-            </p>
-          </div>
-        </div>
-
-        <div class="stats d-flex gap-4 justify-content-evenly">
-          <div class="stats-card text-center gx-0">
-            <div class="stats-card-body">
-              <h4 class="stats-card-title">309</h4>
-              <p class="stats-card-text">CUps of cofee</p>
-            </div>
-          </div>
-
-          <div class="stats-card text-center">
-            <div class="stats-card-body">
-              <h4 class="stats-card-title">23</h4>
-              <p class="stats-card-text">porjects</p>
-            </div>
-          </div>
-
-          <div class="stats-card text-center">
-            <div class="stats-card-body">
-              <h4 class="stats-card-title">10</h4>
-              <p class="stats-card-text">clients</p>
-            </div>
-          </div>
-
-          <div class="stats-card text-center">
-            <div class="stats-card-body">
-              <h4 class="stats-card-title">5</h4>
-              <p class="stats-card-text">parterns</p>
-            </div>
-          </div>
-
-          <div class="black-div"></div>
-        </div>
-      </div>
-
-      <!-- page4 -->
-
-      <!-- <div
-          class="page page4 d-flex py-5 justify-content-start flex-column flex-wrap"
-          id="experience"
+        <div
+          class="profile d-flex flex-column align-items-center justify-content-center row-gap-2"
         >
-          <p id="sec-heading">What i do?</p>
-          <h4 id="primary-heading">Here are some of my expertise</h4>
-        </div> -->
-
-      <!-- page5 -->
-      <div class="page page5 d-flex py-5 justify-content-start flex-column" id="work">
-        <p id="sec-heading">My works</p>
-        <h4 id="primary-heading">RECENT WORK</h4>
-
-        <div class="work-tabs py-3">
-          <div>
-            <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-web-design-tab" data-bs-toggle="tab"
-                data-bs-target="#nav-web-design" type="button" role="tab" aria-controls="nav-web-design"
-                aria-selected="true">
-                Web Design
-              </button>
-              <button class="nav-link" id="nav-wordpress-tab" data-bs-toggle="tab" data-bs-target="#nav-wordpress"
-                type="button" role="tab" aria-controls="nav-wordpress" aria-selected="false">
-                Wordpress
-              </button>
-              <button class="nav-link" id="nav-social-media-tab" data-bs-toggle="tab" data-bs-target="#nav-social-media"
-                type="button" role="tab" aria-controls="nav-social-media" aria-selected="false">
-                Social Media
-              </button>
-            </div>
+        <button class="profile-toggle-btn" aria-label="Toggle Profile">
+          <i class="ph ph-caret-up"></i>
+        </button>
+          <!-- my avatar div -->
+          <div class="my-avatar">
+            <img src="assets/images/my-avatar.png" alt="rohan-gosavi" />
           </div>
-
-          <!-- nav web design -->
-          <div class="tab-content py-3" id="nav-tabContent">
-            <div class="tab-pane fade show active container-fluid" id="nav-web-design" role="tabpanel"
-              aria-labelledby="nav-web-design-tab">
-              <div class="row gx-5">
-                <div id="web-design-card1" class="work-card col-md-4 m-3">
-                  <div class="desc d-flex flex-column align-items-start">
-                    <h3>Gym Website</h3>
-                    <p>Website</p>
-                    <div class="d-flex gap-3 mt-auto">
-                      <a href="">
-                        <img src="https://img.icons8.com/?size=100&id=3760&format=png&color=333333" title="Share"
-                          alt="Share" />
-                      </a>
-                      <a target="_blank" href="/assets/images/Fitness By avengers.png">
-                        <img src="https://img.icons8.com/?size=100&id=7877&format=png&color=333333" alt="Visit"
-                          title="Visit" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="web-design-card2" class="work-card col col-md-4 m-3">
-                  <div class="desc d-flex flex-column align-items-start">
-                    <h3>Work 01</h3>
-                    <p>Website</p>
-                    <div class="d-flex gap-3 mt-auto">
-                      <a href="">
-                        <img src="https://img.icons8.com/?size=100&id=3760&format=png&color=333333" title="Share"
-                          alt="Share" />
-                      </a>
-                      <a target="_blank" href="">
-                        <img src="https://img.icons8.com/?size=100&id=7877&format=png&color=333333" alt="Visit"
-                          title="Visit" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Wordpress -->
-            <div class="tab-pane fade" id="nav-wordpress" role="tabpanel" aria-labelledby="nav-wordpress-tab">
-              <div class="row gx-5">
-                <div id="wordpress1" class="work-card col-md-4 m-3">
-                  <div class="desc d-flex flex-column align-items-start">
-                    <h3>Developers Society</h3>
-                    <p>Wordpress Website</p>
-                    <div class="d-flex gap-3 mt-auto">
-                      <a href="">
-                        <img src="https://img.icons8.com/?size=100&id=3760&format=png&color=333333" title="Share"
-                          alt="Share" />
-                      </a>
-                      <a target="_blank"
-                        href="/assets/images/FireShot Capture 035 - Home - Developers Society - developerssociety.com.png">
-                        <img src="https://img.icons8.com/?size=100&id=7877&format=png&color=333333" alt="Visit"
-                          title="Visit" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="wordpress2" class="work-card col-md-4 col m-3">
-                  <div class="desc d-flex flex-column align-items-start">
-                    <h3>Swani Pin Media</h3>
-                    <p>Wordpress Website</p>
-                    <div class="d-flex gap-3 mt-auto">
-                      <a href="">
-                        <img src="https://img.icons8.com/?size=100&id=3760&format=png&color=333333" title="Share"
-                          alt="Share" />
-                      </a>
-                      <a target="_blank" href="https://swanipinmedia.com">
-                        <img src="https://img.icons8.com/?size=100&id=7877&format=png&color=333333" alt="Visit"
-                          title="Visit" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row gx-5">
-                <div id="wordpress3" class="work-card col-md-4 m-3">
-                  <div class="desc d-flex flex-column align-items-start">
-                    <h3>Shri Hari Decorators</h3>
-                    <p>Wordpress Website</p>
-                    <div class="d-flex gap-3 mt-auto">
-                      <a href="">
-                        <img src="https://img.icons8.com/?size=100&id=3760&format=png&color=333333" title="Share"
-                          alt="Share" />
-                      </a>
-                      <a target="_blank" href="https://shdecorators.rohangosavi.xyz">
-                        <img src="https://img.icons8.com/?size=100&id=7877&format=png&color=333333" alt="Visit"
-                          title="Visit" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="wordpress4" class="work-card  col-md-4 m-3">
-                  <div class="desc d-flex flex-column align-items-start">
-                    <h3>Restro - Silver Spoons</h3>
-                    <p>Wordpress Website</p>
-                    <div class="d-flex gap-3 mt-auto">
-                      <a href="">
-                        <img src="https://img.icons8.com/?size=100&id=3760&format=png&color=333333" title="Share"
-                          alt="Share" />
-                      </a>
-                      <a target="_blank" href="https://restro.rohangosavi.xyz/">
-                        <img src="https://img.icons8.com/?size=100&id=7877&format=png&color=333333" alt="Visit"
-                          title="Visit" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row gx-5">
-                <div id="wordpress5" class="work-card col-md-4 m-3">
-                  <div class="desc d-flex flex-column align-items-start">
-                    <h3>My Pride Inn</h3>
-                    <p>Wordpress Website</p>
-                    <div class="d-flex gap-3 mt-auto">
-                      <a href="">
-                        <img src="https://img.icons8.com/?size=100&id=3760&format=png&color=333333" title="Share"
-                          alt="Share" />
-                      </a>
-                      <a target="_blank" href="">
-                        <img src="https://img.icons8.com/?size=100&id=7877&format=png&color=333333" alt="Visit"
-                          title="Visit" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Social Media -->
-            <div class="tab-pane fade" id="nav-social-media" role="tabpanel" aria-labelledby="nav-social-media-tab">
-              <p>Content is being updated shortly.</p>
-            </div>
-          </div>
+          <h2>Rohan Gosavi</h2>
+          <p>Web Developer</p>
         </div>
+        <!-- uder my avatar contact details -->
+        <div class="contact-details">
+          <li>
+            <ul class="d-flex column-gap-3 py-1 w-100 h-100">
+              <div class="icon-box">
+                <i class="ph ph-envelope-simple"></i>
+              </div>
+              <div
+                class="contact-details-child d-flex flex-column justify-content-center"
+              >
+                <p>Email</p>
+                <a href="mailto:work.rohangosavi@gmail.com" class="contact-link"
+                  >work.rohangosavi@gmail.com</a
+                >
+              </div>
+            </ul>
 
+            <ul class="d-flex column-gap-3 py-1 w-100 h-100">
+              <div class="icon-box">
+                <i class="ph ph-phone"></i>
+              </div>
+              <div
+                class="contact-details-child d-flex flex-column justify-content-center"
+              >
+                <p>Phone</p>
+                <a href="tel:+918983608001" class="contact-link"
+                  >+91 8983608001</a
+                >
+              </div>
+            </ul>
 
-      </div>
+            <ul class="d-flex column-gap-3 py-1 w-100 h-100">
+              <div class="icon-box">
+                <i class="ph ph-map-pin"></i>
+              </div>
+              <div
+                class="contact-details-child d-flex flex-column justify-content-center"
+              >
+                <p>Location</p>
+                <a
+                  href="https://goo.gl/maps/Pune"
+                  target="_blank"
+                  class="contact-link"
+                  >Pune, India</a
+                >
+              </div>
+            </ul>
 
-      <!-- page6 -->
-      <div class="page page6 d-flex py-5 justify-content-start flex-column flex-wrap" id="contact">
-        <p id="sec-heading">Get in touch</p>
-        <h4 id="primary-heading">CONTACT</h4>
-
-        <div class="container-fluid contact-box mt-5 d-flex justify-content-between">
-          <div class="col-md-5">
-            <div class="row">
-              <div class="contact-card mb-3" style="max-width: 350px">
-                <div class="row no-gutters gap-2">
-                  <div class="contact-icon-box col d-flex align-items-center justify-content-center">
-                    <img id="contact-icon"
-                      src="https://img.icons8.com/?size=100&id=okvpqeYbG0xb&format=png&color=2C98F0" class="card-img"
-                      alt="..." />
-                  </div>
-                  <div class="col-md-8 d-flex align-items-center">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="mailto:work.rohangosavi@gmail.com">work.rohangosavi@gmail.com</a>
-                      </h5>
-                    </div>
-                  </div>
+            <ul class="d-flex column-gap-3 py-1 w-100 h-100">
+              <div class="icon-box">
+                <i class="ph ph-link"></i>
+              </div>
+              <div
+                class="contact-details-child d-flex flex-column justify-content-center"
+              >
+                <p>Social</p>
+                <div class="social-links d-flex gap-3">
+                  <a
+                    href="https://github.com/rohangosavi7"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="ph ph-github-logo"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/rohan-gosavi57/"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i class="ph ph-linkedin-logo"></i>
+                  </a>
+                  <!-- <a href="https://twitter.com/yourusername" target="_blank" class="social-icon">
+                    <i class="ph ph-twitter-logo"></i>
+                  </a> -->
                 </div>
               </div>
+            </ul>
 
-              <div class="contact-card mb-3" style="max-width: 340px">
-                <div class="row no-gutters gap-2">
-                  <div class="contact-icon-box col d-flex align-items-center justify-content-center">
-                    <img id="contact-icon"
-                      src="https://img.icons8.com/?size=100&id=46SSz0tLEkrY&format=png&color=2C98F0" class="card-img"
-                      alt="..." />
-                  </div>
-                  <div class="col-md-8 d-flex align-items-center">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="#">Pune, Maharastra, India</a>
-                      </h5>
-                    </div>
-                  </div>
-                </div>
+            <!-- <ul class="d-flex column-gap-3 py-1 w-100 h-100">
+              <div class="icon-box">
+                <i class="ph ph-file-pdf"></i>
               </div>
-
-              <div class="contact-card mb-3" style="max-width: 340px">
-                <div class="row no-gutters gap-2">
-                  <div class="contact-icon-box col d-flex align-items-center justify-content-center">
-                    <img id="contact-icon" src="https://img.icons8.com/?size=100&id=53438&format=png&color=2C98F0"
-                      class="card-img" alt="..." />
-                  </div>
-                  <div class="col-md-8 d-flex align-items-center">
-                    <div class="card-body">
-                      <h5 class="card-title" id="tel">
-                        <a href="tel:+918999865294">+91 89 99 86 52 94</a>
-                      </h5>
-                    </div>
-                  </div>
-                </div>
+              <div class="contact-details-child d-flex flex-column justify-content-center">
+                <a href="assets/files/resume.pdf" download class="cv-button">
+                  Download CV
+                  <i class="ph ph-download"></i>
+                </a>
               </div>
-            </div>
-          </div>
-
-          <div class="col-md-5 contact-form-cont">
-            <div class="col">
-              <div class="row">
-                <div class="form-div col-md-10 col-md-offset-1 col-md-pull-1 animate-box fadeInRight animated"
-                  data-animate-effect="fadeInRight">
-                  <form action="https://api.web3forms.com/submit" method="POST" onsubmit="displayConfirm()" id="form">
-                    <!-- Replace with your Access Key -->
-                    <input type="hidden" name="access_key" value="c85cc405-7e1f-43f3-8ab3-6014c892bdba" />
-
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Name" name="name" required />
-                    </div>
-                    <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email" name="email" required />
-                    </div>
-
-
-                    <div class="form-group">
-                      <textarea id="message" cols="30" rows="7" class="form-control" placeholder="Your Message"
-                        name="message"></textarea>
-                    </div>
-
-                    <!-- Honeypot Spam Protection -->
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
-
-                    <!-- Custom Confirmation / Success Page -->
-
-
-                    <div class="form-group">
-                      <input type="submit" class="btn btn-primary btn-send-message" value="Send Message" />
-
-
-                    </div>
-                    <div id="result"></div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
+            </ul> -->
+          </li>
         </div>
       </div>
+      <div class="main-col2 pri-container">
+        <header class="header">
+          <div class="d-flex align-items-center py-2 px-5 gap-5">
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </header>
+        <section id="about">
+          <div class="about-me container">
+            <h2 class="pri-heading">About Me</h2>
+            <div id="hor-divider"></div>
 
+            <div class="bio-container">
+              <div class="bio-text">
+                <p class="highlight-text">
+                  👋 Hello! I'm a
+                  <span class="text-highlight">MERN Stack Developer</span> with
+                  a passion for building scalable web applications
+                </p>
+                <p>
+                  With expertise in React.js, Node.js, MongoDB, and Express.js.
+                  I specialize in creating full-stack applications that combine
+                  powerful backend functionality with engaging user interfaces.
+                </p>
+              </div>
+            </div>
+
+            <h3 class="sec-heading">What I'm Doing</h3>
+            <div class="cards d-flex w-100 flex-wrap gap-3">
+              <div class="cards-child sec-container d-flex gap-3">
+                <div class="icon-box">
+                  <i class="ph ph-code"></i>
+                </div>
+                <div>
+                  <h4>Frontend Development</h4>
+                  <p>
+                    Building responsive and interactive UIs using React.js and
+                    modern JavaScript
+                  </p>
+                </div>
+              </div>
+              <div class="cards-child sec-container d-flex gap-3">
+                <div class="icon-box">
+                  <i class="ph ph-database"></i>
+                </div>
+                <div>
+                  <h4>Backend Development</h4>
+                  <p>
+                    Creating robust APIs and server-side applications with
+                    Node.js and Express
+                  </p>
+                </div>
+              </div>
+              <div class="cards-child sec-container d-flex gap-3">
+                <div class="icon-box">
+                  <i class="ph ph-stack"></i>
+                </div>
+                <div>
+                  <h4>Database Design</h4>
+                  <p>
+                    Designing and implementing MongoDB databases with optimal
+                    schema design
+                  </p>
+                </div>
+              </div>
+              <div class="cards-child sec-container d-flex gap-3">
+                <div class="icon-box">
+                  <i class="ph ph-plugs-connected"></i>
+                </div>
+                <div>
+                  <h4>API Development</h4>
+                  <p>
+                    Creating RESTful APIs and real-time applications using
+                    Socket.io
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- about me end -->
+        <section id="resume">
+          <div class="resume container">
+            <h2 class="pri-heading">Resume</h2>
+            <div id="hor-divider"></div>
+
+            <!-- Education Section -->
+            <div class="resume-section">
+              <div class="section-header d-flex align-items-center gap-3">
+                <div class="icon-box">
+                  <i class="ph ph-graduation-cap"></i>
+                </div>
+                <h3 class="sec-heading">Education</h3>
+              </div>
+
+              <div class="timeline-wrapper">
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h4>Savitribai Phule Pune University, Pune</h4>
+                    <span class="timeline-period">2021 — 2025</span>
+                    <p>Bachelor of Engineering - Computer Engineering</p>
+                    <ul class="achievement-list">
+                      <!-- <li>CGPA: 8.5/10</li> -->
+                      <li>Core team member of College Technical Club</li>
+                      <li>Won 2nd prize in College Hackathon</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="resume-section">
+              <div class="section-header d-flex align-items-center gap-3">
+                <div class="icon-box">
+                  <i class="ph ph-briefcase"></i>
+                </div>
+                <h3 class="sec-heading">Internship</h3>
+              </div>
+
+              <div class="timeline-wrapper">
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h4>Intern Yhills Edutech Pvt. Ltd.</h4>
+                    <span class="timeline-period">Oct-2023 — Dec-2023</span>
+                    <p>
+                      Worked on MERN stack development, building full-stack
+                      applications and implementing real-time features.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h4>Intern Edunexa Tech (from AICTE), Pune</h4>
+                    <span class="timeline-period">Dec 2023 — Jan 2024</span>
+                    <p>
+                      Developed and deployed web applications using modern
+                      technologies and best practices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="resume-section">
+              <h3 class="sec-heading">My Skills</h3>
+              <div class="skills-container sec-container p-4">
+                <div class="skill-item">
+                  <h4>Web Design <span>70%</span></h4>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 70%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <h4>Web Development <span>90%</span></h4>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
+                </div>
+
+                <!-- <div class="skill-item">
+                  <h4>Version Control <span>60%</span></h4>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 60%"></div>
+                  </div>
+                </div> -->
+
+                <div class="skill-item">
+                  <h4>Backend Development <span>40%</span></h4>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 40%"></div>
+                  </div>
+                </div>
+
+                <!-- <div class="skill-item">
+                  <h4>Data Structures and Algorithms <span>50%</span></h4>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 50%"></div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+
+            <!-- Tech Stack Section -->
+            <div class="resume-section">
+              <div class="section-header d-flex align-items-center gap-3">
+                <i class="ph ph-stack section-icon"></i>
+                <h3 class="sec-heading">Tech Stack</h3>
+              </div>
+
+              <div class="tech-grid sec-container p-4">
+                <div class="tech-item">
+                  <i class="devicon-react-original colored"></i>
+                  <span>React.js</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-nodejs-plain colored"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-javascript-plain colored"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-mongodb-plain colored"></i>
+                  <span>MongoDB</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-express-original"></i>
+                  <span>Express.js</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-html5-plain colored"></i>
+                  <span>HTML5</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-css3-plain colored"></i>
+                  <span>CSS3</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-bootstrap-plain colored"></i>
+                  <span>Bootstrap</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tools Section -->
+            <div class="resume-section">
+              <div class="section-header d-flex align-items-center gap-3">
+                <i class="ph ph-wrench section-icon"></i>
+                <h3 class="sec-heading">Tools & Platforms</h3>
+              </div>
+
+              <div class="tech-grid sec-container p-4">
+                <div class="tech-item">
+                  <i class="devicon-git-plain colored"></i>
+                  <span>Git</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-github-original"></i>
+                  <span>GitHub</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-vscode-plain colored"></i>
+                  <span>VS Code</span>
+                </div>
+                <div class="tech-item">
+                  <i class="ph ph-terminal"></i>
+                  <span>Command Line</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-npm-original-wordmark colored"></i>
+                  <span>NPM</span>
+                </div>
+                <div class="tech-item">
+                  <i class="ph ph-cloud"></i>
+                  <span>Firebase</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-figma-plain colored"></i>
+                  <span>Figma</span>
+                </div>
+                <div class="tech-item">
+                  <i class="ph ph-rocket-launch"></i>
+                  <span>Vercel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+          <div class="portfolio container">
+            <h2 class="pri-heading">My Portfolio</h2>
+            <div id="hor-divider"></div>
+
+            <div class="project-filters">
+              <button class="filter-btn active" data-filter="all">All Projects</button>
+              <button class="filter-btn" data-filter="web">Web Apps</button>
+              <button class="filter-btn" data-filter="frontend">Frontend</button>
+              <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
+            <div id="tab-content-container">
+              <div class="tab-content-card" data-project="aiinvoicer" data-category="fullstack">
+                <img src="assets/images/project-1.jpg" alt="AI Invoicer" />
+                <div class="card-content">
+                  <h4>AI Invoicer</h4>
+                  <p>MERN Stack Application</p>
+                  <div class="card-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">MongoDB</span>
+                  </div>
+                </div>
+                <div class="project-overlay">
+                  <i class="ph ph-eye"></i>
+                </div>
+              </div>
+
+              <div class="tab-content-card" data-project="dogspot" data-category="web">
+                <img src="assets/images/project-2.png" alt="The Dog Spot" />
+                <div class="card-content">
+                  <h4>The Dog Spot</h4>
+                  <p>Web Development</p>
+                  <div class="card-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                  </div>
+                </div>
+                <div class="project-overlay">
+                  <i class="ph ph-eye"></i>
+                </div>
+              </div>
+
+              <div class="tab-content-card" data-project="chatapp" data-category="fullstack">
+                <img src="assets/images/project-3.jpg" alt="Realtime Chat App" />
+                <div class="card-content">
+                  <h4>Realtime Chat App</h4>
+                  <p>Socket.IO & Node.js</p>
+                  <div class="card-tags">
+                    <span class="tag">Socket.IO</span>
+                    <span class="tag">Node.js</span>
+                  </div>
+                </div>
+                <div class="project-overlay">
+                  <i class="ph ph-eye"></i>
+                </div>
+              </div>
+
+              <div class="tab-content-card" data-project="musicplayer" data-category="frontend">
+                <img src="assets/images/project-4.png" alt="Music Player" />
+                <div class="card-content">
+                  <h4>Music Player</h4>
+                  <p>JavaScript Application</p>
+                  <div class="card-tags">
+                    <span class="tag">JavaScript</span>
+                  </div>
+                </div>
+                <div class="project-overlay">
+                  <i class="ph ph-eye"></i>
+                </div>
+              </div>
+
+              <div class="tab-content-card" data-project="webifyx" data-category="frontend">
+                <img src="assets/images/project-1.jpg" alt="Webifyx Landing Page" />
+                <div class="card-content">
+                  <h4>Webifyx Landing Page</h4>
+                  <p>HTML, CSS & JavaScript</p>
+                  <div class="card-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                  </div>
+                </div>
+                <div class="project-overlay">
+                  <i class="ph ph-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact" class="contact-section">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h3 class="pri-heading">Contact Info</h3>
+            <div id="hor-divider"></div>
+            
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="ph ph-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <p>work.rohangosavi@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="ph ph-phone"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <p>+91 8983608001</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="ph ph-map-pin"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>Pune, India</p>
+              </div>
+            </div>
+
+            <div class="social-links-container">
+              <h4>Follow Me</h4>
+              <div class="social-icons">
+                <a href="https://github.com/rohangosavi7" class="social-icon-link">
+                  <i class="ph ph-github-logo"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rohangosavi7/" class="social-icon-link">
+                  <i class="ph ph-linkedin-logo"></i>
+                </a>
+                <!-- <a href=" " class="social-icon-link">
+                  <i class="ph ph-twitter-logo"></i>
+                </a> -->
+                <!-- <a href="#" class="social-icon-link">
+                  <i class="ph ph-instagram-logo"></i>
+                </a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h3 class="pri-heading">Send Message</h3>
+            <div id="hor-divider"></div>
+            
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Subject</label>
+                <input type="text" class="form-control" placeholder="Subject" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" placeholder="Your Message" required></textarea>
+              </div>
+
+              <button type="submit" class="submit-button">
+                <i class="ph ph-paper-plane-right"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
     </div>
 
-  </main>
+    <div class="project-modal">
+      <div class="modal-content">
+        <i class="ph ph-x close-modal"></i>
 
-<!-- 
-  <div id="contact-confirm" class="contact-confirm hidden">
-    <img src="https://img.icons8.com/?size=100&id=tyk8jzZDn7y7&format=png&color=2C98F0" alt="" />
-    <h1 id="primary-heading">Form submitted successfully!</h1>
-    <p id="sec-heading">
-      Thank you! The form has been submitted successfully.<br />We will reply
-      to you soon!
-    </p>
-    <a href="http://127.0.0.1:5500/Index.html">Confirm</a>
-  </div> -->
+        <div class="project-slider">
+          <div class="slider-container"></div>
+          <div class="slider-nav"></div>
+          <button class="slider-button prev">
+            <i class="ph ph-caret-left"></i>
+          </button>
+          <button class="slider-button next">
+            <i class="ph ph-caret-right"></i>
+          </button>
+        </div>
 
+        <h3></h3>
+        <p></p>
 
+        <div class="project-details">
+          <div class="detail-item">
+            <h4>TECHNOLOGIES</h4>
+            <p class="technologies"></p>
+          </div>
+          <div class="detail-item">
+            <h4>CATEGORY</h4>
+            <p class="category"></p>
+          </div>
+          <!-- <div class="detail-item">
+            <h4>COMPLETED</h4>
+            <p class="completed"></p>
+          </div> -->
+        </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="project-links"></div>
+      </div>
+    </div>
 
+    <script type="module" src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
 
+    <script>
+      function showSection(sectionId) {
+        document.getElementById(sectionId).style.display = "block";
+        // Hide all sections
+        document.querySelectorAll("section").forEach(function (section) {
+          section.style.display = "none";
+        });
 
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"
-    integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"
-    integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="script.js"></script>
-
-</body>
-
+        // Show the selected section
+        document.getElementById(sectionId).style.display = "block";
+      }
+    </script>
+  </body>
 </html>
