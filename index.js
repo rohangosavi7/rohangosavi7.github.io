@@ -200,7 +200,7 @@ const projectsData = {
     chatapp: {
         title: "Realtime Chat Application",
         description: "A real-time chat application built with Socket.IO and Node.js, featuring instant messaging, room creation, and user presence indicators.",
-        images: ["assets/images/project-1.jpg"],
+        images: ["assets/images/Cha-app.png"],
         technologies: "Socket.IO, Node.js, Express.js",
         category: "Real-time Application",
         completed: "January 2024",
@@ -210,7 +210,7 @@ const projectsData = {
     musicplayer: {
         title: "Music Player",
         description: "A JavaScript-based music player with features like playlist management, shuffle play, and visualizations.",
-        images: ["assets/images/project-1.jpg"],
+        images: ["assets/images/Music-player.png"],
         technologies: "HTML, CSS, JavaScript",
         category: "Frontend Application",
         completed: "December 2023",
@@ -220,7 +220,7 @@ const projectsData = {
     webifyx: {
         title: "Webifyx Landing Page",
         description: "A modern and responsive landing page built with HTML, CSS, and JavaScript, featuring smooth animations and interactive elements.",
-        images: ["assets/images/project-1.jpg"],
+        images: ["assets/images/webifyx.png"],
         technologies: "HTML, CSS, JavaScript, Bootstrap",
         category: "Landing Page",
         completed: "November 2023",
